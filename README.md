@@ -14,7 +14,7 @@ WAJIBU – Wajibika Kidigitali project in Kilosa, Mvomero, Mtwara DC and Mtwara 
 Inclusive by design: for women, youth and persons with disabilities, and for people in low-bandwidth areas.
 
 ## Run it
-It is a single HTML file. Open `index.html` in any modern browser. No setup is needed.
+It is a single HTML file. Open `wajibika-kidigitali-demo.html` in any modern browser. No setup is needed.
 
 ## Note
 All names, numbers and budget figures are sample data. The USSD code and call number are examples only.
