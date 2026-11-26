@@ -969,6 +969,462 @@ select.csh{display:none!important}
 .fpb2 .fpgrid2 small{color:#c3c9d1}
 .fpb2 .fpgrid2 button:hover,.fpb2 .fpnav2 button:hover{filter:brightness(1.08)}
 .fpb2 .fpgrid2 button:active,.fpb2 .fpgrid2 button.pr,.fpb2 .fpnav2 button:active,.fpb2 .fpnav2 button.pr{transform:translateY(2px);box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 0 0 #1c1f24;background:linear-gradient(180deg,#4c535c,#3a3f46)}
+
+/* citizen web platform */
+.wurl{flex:1;max-width:520px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:6px;font-size:13px;color:var(--mut);background:var(--card);border:1px solid var(--line);border-radius:99px;padding:5px 14px}
+.wurl small{opacity:.8}
+.wsite{flex:1;overflow:auto;scroll-behavior:auto;font-size:calc(15px * var(--wfz,1))}
+.whd{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:12px 28px;background:color-mix(in srgb,var(--card) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.wlogo{display:flex;align-items:center;gap:9px;font-size:16px}.wlogo span{width:32px;height:32px;border-radius:9px;display:grid;place-items:center;background:#176FD3;color:#fff}
+.wnav{display:flex;gap:2px;flex:1;flex-wrap:wrap}.wnav button{border:0;background:none;color:var(--ink);font:600 13.5px/1 inherit;padding:9px 11px;border-radius:9px;display:flex;align-items:center;gap:6px}.wnav button:hover{background:var(--tint)}
+.wtools{display:flex;align-items:center;gap:8px}
+.wfz{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden}.wfz button{border:0;background:none;color:var(--ink);font-weight:700;padding:7px 10px;min-width:38px}.wfz button+button{border-left:1px solid var(--line)}.wfz button:hover{background:var(--tint)}
+.wtools .btn.gray.on{background:var(--tint);border-color:#176FD3;color:var(--blue2)}
+.wlite{margin:12px 28px 0;padding:10px 14px;border-radius:10px;background:var(--tint);font-size:13.5px;display:flex;gap:8px;align-items:center}
+.whero{padding:44px 28px 34px;background:linear-gradient(180deg,light-dark(#eaf3ff,#14223a),transparent)}
+.whero h1{font-size:calc(32px * var(--wfz,1));line-height:1.15;margin:0 0 10px;max-width:720px;letter-spacing:-.4px}
+.whero>p{margin:0 0 20px;max-width:680px;color:var(--mut);line-height:1.55}
+.wform{display:flex;gap:10px;max-width:760px}.wform .inp{flex:1;height:52px;font-size:calc(15.5px * var(--wfz,1));border-radius:14px;padding:0 18px}.wform .btn{height:52px;padding:0 22px;border-radius:14px;display:flex;gap:8px;align-items:center}
+.wsug{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;max-width:760px}
+.wsug .chip{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:99px;padding:8px 14px;font-size:calc(13.5px * var(--wfz,1))}.wsug .chip:hover{border-color:#176FD3;color:var(--blue2)}
+.wth{max-width:760px;margin-top:22px;display:flex;flex-direction:column;gap:12px}
+.wq{align-self:flex-end;max-width:85%}.wq span{display:block;background:#176FD3;color:#fff;padding:10px 15px;border-radius:16px 16px 4px 16px;line-height:1.45}
+.wa{background:var(--card);border:1px solid var(--line);border-radius:4px 16px 16px 16px;padding:14px 16px;line-height:1.6}
+.wa.ty{display:flex;align-items:center;gap:10px;color:var(--mut)}.wa.ty .spin{width:14px;height:14px;border-width:2px}
+.wah{display:flex;align-items:center;gap:8px;margin-bottom:6px;font-size:13px}.wav{width:24px;height:24px;border-radius:7px;display:grid;place-items:center;background:var(--tint);color:var(--blue2)}
+.wsrc{margin-top:10px;font-size:12.5px;color:var(--mut);display:flex;align-items:center;gap:6px}
+.wact{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.wfb{margin-left:auto;display:flex;align-items:center;gap:6px}.wfb small{color:var(--mut)}
+.wact .btn.sm{height:32px;padding:0 11px;font-size:13px;display:inline-flex;gap:6px;align-items:center}
+.wact .btn.gray.on{background:var(--tint);border-color:#176FD3;color:var(--blue2)}
+.wclr{align-self:flex-start}
+.wsec{padding:30px 28px;border-top:1px solid var(--line)}
+.wsec h2{margin:0 0 4px;font-size:calc(21px * var(--wfz,1));display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.wsec .sub{margin:0 0 18px}
+.wtg{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.wtc{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:5px}
+.wtc:hover{border-color:#176FD3;box-shadow:0 8px 20px -14px rgba(23,111,211,.6);transform:translateY(-1px)}
+.wti{width:38px;height:38px;border-radius:11px;display:grid;place-items:center;background:var(--tint);color:var(--blue2);margin-bottom:4px}
+.wtc b{font-size:calc(15px * var(--wfz,1))}.wtc small{color:var(--mut);font-size:calc(13px * var(--wfz,1))}
+.wsh{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap}
+.wcn{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;min-width:220px;margin-bottom:18px}
+.wtot{display:flex;flex-direction:column;gap:2px;margin-bottom:16px}.wtot small{color:var(--mut)}.wtot b{font-size:calc(20px * var(--wfz,1))}
+.wbars{display:flex;flex-direction:column;gap:12px;margin-bottom:18px;max-width:860px}
+.wbrw{display:grid;grid-template-columns:110px 1fr minmax(170px,auto);gap:14px;align-items:center}
+.wbl{font-weight:600}.wbt{height:14px;border-radius:99px;background:light-dark(#e8eef6,rgba(255,255,255,.07));overflow:hidden}.wbt i{display:block;height:100%;border-radius:99px;background:#2a8bf2}
+.wbv{font-size:calc(13.5px * var(--wfz,1));color:var(--mut)}
+.wcs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:14px;max-width:860px}
+.wcs>div{border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:4px}.wcs b{font-size:calc(28px * var(--wfz,1))}.wcs small{color:var(--mut)}
+.wht{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;max-width:860px}
+.whc{border-radius:12px;padding:12px 14px;border-left:4px solid;background:var(--tint);display:flex;flex-direction:column;gap:3px}.whc small{color:var(--mut)}
+.whc.ok{border-color:#1f9d55}.whc.wa{border-color:#d98b0b}.whc.er{border-color:#d64545}
+.wcsrc{font-size:12.5px;color:var(--mut);margin:14px 0 0}
+.wchg{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px}
+.wchg button{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:4px}
+.wchg button:hover{border-color:#176FD3}.wchg button>svg{color:var(--blue2);margin-bottom:4px}.wchg small{color:var(--mut)}
+.wft{padding:22px 28px 30px;border-top:1px solid var(--line);font-size:13px;color:var(--mut)}.wft p{margin:0 0 6px}
+.wbr.lite .whero{background:none}.wbr.lite *{box-shadow:none!important;transition:none!important}.wbr.lite .whd{backdrop-filter:none;background:var(--card)}.wbr.lite .wti,.wbr.lite .wav{display:none}
+@media (max-width:760px){.whd{padding:10px 14px;gap:8px}.wnav{order:3;flex-basis:100%;overflow:auto;flex-wrap:nowrap}.wtools .btn span{display:none}
+ .whero{padding:26px 16px}.whero h1{font-size:calc(24px * var(--wfz,1))}.wform{flex-direction:column}.wsec{padding:22px 16px}.wbrw{grid-template-columns:80px 1fr;}.wbv{grid-column:2}.wfb{margin-left:0}}
+
+.wnav button{white-space:nowrap}
+.wtools .btn.gray{height:36px;display:inline-flex;align-items:center;gap:6px;padding:0 12px}
+@media (max-width:760px){.wnav{gap:0;padding-bottom:2px}.wnav button{padding:8px 9px;font-size:13px}.wtools{margin-left:auto}.wlogo b{font-size:15px}}
+
+/* web platform in a phone */
+.wcit .wph{flex:none}
+.wscr{background:var(--card);color:var(--ink)}
+.wscr .sbar{background:var(--card);color:var(--ink)}
+.wscr .home{background:var(--card)}
+.wscr .wubar{display:flex;align-items:center;gap:10px;padding:6px 14px 10px;background:var(--card);border-bottom:1px solid var(--line);flex:none}
+.wscr .wubar>i{display:none}
+.wscr .wurl{flex:1;max-width:none;margin:0;justify-content:flex-start;gap:7px;font-size:14px;color:var(--ink);background:light-dark(#eef2f7,#1d2635);border:0;border-radius:99px;padding:9px 14px;overflow:hidden;white-space:nowrap}
+.wscr .wurl span{overflow:hidden;text-overflow:ellipsis}
+.wtab{width:26px;height:26px;border-radius:7px;border:2px solid var(--ink);background:none;color:var(--ink);font:700 12px/1 inherit;display:grid;place-items:center;padding:0}
+.wscr .wsite{font-size:calc(14.5px * var(--wfz,1))}
+.wscr .whd{padding:10px 14px;gap:8px}.wscr .wlogo b{font-size:15px}.wscr .wlogo span{width:28px;height:28px}
+.wscr .wnav{order:3;flex-basis:100%;overflow-x:auto;flex-wrap:nowrap;gap:0;scrollbar-width:none}.wscr .wnav::-webkit-scrollbar{display:none}
+.wscr .wnav button{padding:8px 10px;font-size:13px}
+.wscr .wtools{margin-left:auto;gap:6px}.wscr .wtools .btn.gray{height:32px;padding:0 9px;font-size:0;gap:0}.wscr .wtools .btn.gray svg{width:16px;height:16px}
+.wscr .wfz button{padding:6px 8px;min-width:32px;font-size:13px}
+.wscr .wlite{margin:10px 14px 0;font-size:12.5px}
+.wscr .whero{padding:24px 16px 22px}.wscr .whero h1{font-size:calc(24px * var(--wfz,1))}.wscr .whero>p{font-size:calc(14px * var(--wfz,1))}
+.wscr .wform{flex-direction:column;gap:8px}.wscr .wform .inp,.wscr .wform .btn{height:48px}.wscr .wform .btn{justify-content:center}
+.wscr .wsug .chip{font-size:calc(12.5px * var(--wfz,1));padding:7px 12px}
+.wscr .wq{max-width:90%}.wscr .wa{padding:12px 13px}
+.wscr .wact{gap:6px}.wscr .wfb{margin-left:0;width:100%;flex-wrap:wrap}
+.wscr .wsec{padding:22px 16px}.wscr .wsec h2{font-size:calc(18px * var(--wfz,1))}
+.wscr .wtg{grid-template-columns:1fr 1fr;gap:10px}.wscr .wtc{padding:13px}.wscr .wtc small{font-size:calc(12px * var(--wfz,1))}
+.wscr .wcn{min-width:0;width:100%;margin-bottom:14px}
+.wscr .wbrw{grid-template-columns:72px 1fr;gap:4px 10px}.wscr .wbv{grid-column:2;font-size:calc(12.5px * var(--wfz,1))}
+.wscr .wcs{grid-template-columns:1fr 1fr}.wscr .wcs b{font-size:calc(22px * var(--wfz,1))}
+.wscr .wht{grid-template-columns:1fr 1fr}.wscr .whc{padding:10px 11px}
+.wscr .wchg{grid-template-columns:1fr 1fr}.wscr .wchg button{padding:13px}
+.wscr .wft{padding:18px 16px 26px}
+.wscr.lite .whero{background:none}.wscr.lite *{box-shadow:none!important;transition:none!important}.wscr.lite .whd{backdrop-filter:none;background:var(--card)}.wscr.lite .wti,.wscr.lite .wav{display:none}
+.wpan{width:360px;max-width:100%;padding:0;align-self:flex-start;overflow:hidden}
+.wpan .dph{display:flex;padding:18px 18px 12px;border-bottom:1px solid var(--line)}.wpan .dph b{display:block;font-size:16px}.wpan .dph span{display:block;color:var(--mut);font-size:13px;margin-top:3px}
+.wpan .dpb{padding:6px 10px 14px}
+@media (max-width:760px){.wcit .wpan{display:none}}
+.wch2{margin-top:10px}
+@media (max-width:480px){#views button{padding:0 4px;font-size:12.5px}#views .badge{display:none}}
+
+/* web v2: clean website + AI app */
+.wscr .wbody{flex:1;min-height:0;position:relative;display:flex;flex-direction:column}
+.wscr .wsite{flex:1;overflow:auto}
+.wscr.wdark,.wscr.wdark .sbar,.wscr.wdark .home{background:#0b0f16;color:#fff}
+.wscr .whd{display:grid;grid-template-columns:1fr auto;gap:8px 10px;padding:10px 16px 6px}
+.wscr .wnav{grid-column:1/-1;order:0;gap:4px;overflow-x:auto;flex-wrap:nowrap}
+.wscr .wnav button{border:1px solid var(--line);border-radius:99px;padding:6px 12px;font-size:12.5px;white-space:nowrap}
+.wscr .wtools .btn.gray{width:34px;height:34px;padding:0;justify-content:center}
+.wscr .whero{padding:22px 16px 24px}
+.waiopen{width:100%;display:flex;align-items:center;gap:12px;text-align:left;border:0;border-radius:16px;padding:14px 16px;background:#176FD3;color:#fff;box-shadow:0 10px 24px -14px rgba(23,111,211,.8);margin:4px 0 14px}
+.waiopen:hover{background:#125fb6}
+.waiopen>span:nth-child(2){flex:1;display:flex;flex-direction:column;gap:2px}.waiopen b{font-size:calc(16px * var(--wfz,1))}.waiopen small{opacity:.85;font-size:calc(12.5px * var(--wfz,1))}
+.wai-i{width:38px;height:38px;border-radius:11px;background:rgba(255,255,255,.18);display:grid;place-items:center}
+.wscr .wtg{grid-template-columns:1fr;gap:10px}
+.wscr .wtc{flex-direction:column;gap:4px;padding:14px 14px 12px}
+.wscr .wtc .wti{width:34px;height:34px}
+.wlink{align-self:flex-start;border:0;background:none;color:var(--blue2);font-weight:700;font-size:calc(13px * var(--wfz,1));padding:6px 0 0}
+.wlink:hover{text-decoration:underline}
+.wfab{position:absolute;right:14px;bottom:14px;z-index:6;display:flex;align-items:center;gap:7px;border:0;border-radius:99px;padding:11px 16px;background:#176FD3;color:#fff;font-weight:700;font-size:14px;box-shadow:0 10px 24px -10px rgba(23,111,211,.9)}
+.wfab:hover{background:#125fb6}
+/* AI app */
+.wapp{flex:1;min-height:0;display:flex;flex-direction:column;position:relative;background:var(--card)}
+.wchead{display:flex;align-items:center;gap:2px;padding:4px 8px 8px;border-bottom:1px solid var(--line);flex:none}
+.wct{flex:1;text-align:center;line-height:1.2}.wct b{display:block;font-size:15px}.wct span{font-size:11.5px;color:var(--mut)}
+.wib{width:40px;height:40px;border:0;background:none;color:var(--ink);border-radius:12px;display:grid;place-items:center;flex:none}
+.wib:hover{background:var(--tint)}
+.wcbody{flex:1;min-height:0;overflow:auto;padding:16px 14px 10px;display:flex;flex-direction:column;gap:14px;font-size:calc(14.5px * var(--wfz,1))}
+.wwel{margin:auto 0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px;padding:10px 4px}
+.wlg{width:52px;height:52px;border-radius:16px;background:#176FD3;color:#fff;display:grid;place-items:center}
+.wwel h2{margin:0;font-size:calc(19px * var(--wfz,1));line-height:1.3}
+.wsugv{display:flex;flex-direction:column;gap:8px;width:100%}
+.wsugv button{text-align:left;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;padding:11px 14px;font-size:calc(13.5px * var(--wfz,1));font-weight:600}
+.wsugv button:hover{border-color:#176FD3}
+.wme{align-self:flex-end;max-width:82%;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.wme span{background:light-dark(#e8f1fc,#1d3557);color:var(--ink);padding:10px 14px;border-radius:18px 18px 4px 18px;line-height:1.45}
+.wimg{border:0;padding:0;background:none;border-radius:14px;overflow:hidden;width:170px}.wimg img{display:block;width:100%;height:190px;object-fit:cover}
+.wvn{font-size:12px;color:var(--mut);display:flex;align-items:center;gap:5px}
+.wai{display:flex;gap:9px;align-items:flex-start}
+.wav{width:28px;height:28px;border-radius:9px;background:#176FD3;color:#fff;display:grid;place-items:center;flex:none;margin-top:2px}
+.wab{flex:1;min-width:0}
+.wtx{line-height:1.6}
+.wsrc{margin-top:8px;font-size:12px;color:var(--mut)}
+.wacts{display:flex;gap:2px;margin-top:6px}
+.wacts button{width:34px;height:34px;border:0;background:none;color:var(--mut);border-radius:10px;display:grid;place-items:center}
+.wacts button:hover{background:var(--tint);color:var(--ink)}.wacts button.on{color:#176FD3;background:var(--tint)}
+.wtyping{padding:8px 0}
+.wdots3{display:inline-flex;gap:4px}.wdots3 i{width:7px;height:7px;border-radius:50%;background:var(--mut);animation:wdot 1s infinite}.wdots3 i:nth-child(2){animation-delay:.15s}.wdots3 i:nth-child(3){animation-delay:.3s}
+@keyframes wdot{0%,80%,100%{opacity:.3;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+.wcard{margin-top:8px;border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:8px}
+.wcr{display:grid;grid-template-columns:62px 1fr;gap:2px 10px;align-items:center;font-size:13px}.wcr b{grid-column:2;font-weight:600;font-size:12.5px;color:var(--mut)}
+.wcr .wbt{height:9px}
+.wctot{font-size:13px;border-top:1px solid var(--line);padding-top:8px}
+.wcomp{flex:none;padding:8px 10px 6px;border-top:1px solid var(--line);background:var(--card)}
+.wcrow{display:flex;align-items:flex-end;gap:7px}
+.wround,.wsend{width:42px;height:42px;border-radius:50%;border:0;display:grid;place-items:center;flex:none}
+.wround{background:var(--tint);color:var(--ink)}.wround:hover{filter:brightness(.96)}
+.wsend{background:#176FD3;color:#fff}.wsend:hover{background:#125fb6}.wsend[hidden]{display:none}
+.wpill{flex:1;min-width:0;display:flex;align-items:flex-end;border:1px solid var(--line);border-radius:22px;padding:2px 2px 2px 14px;background:var(--card)}
+.wpill textarea{flex:1;min-width:0;border:0;outline:0;resize:none;background:none;color:var(--ink);font:inherit;font-size:15px;line-height:1.4;padding:10px 0;max-height:110px}
+.wpill .wib{width:38px;height:38px}
+.wdisc{font-size:11px;color:var(--mut);text-align:center;padding:6px 6px 0;line-height:1.35}
+.watt{position:relative;width:64px;height:64px;margin:0 0 8px 49px}.watt img{width:100%;height:100%;object-fit:cover;border-radius:12px}
+.watt button{position:absolute;top:-6px;right:-6px;width:22px;height:22px;border-radius:50%;border:0;background:#111;color:#fff;display:grid;place-items:center}
+.wrecbar{display:flex;align-items:center;gap:8px}
+.wrp{flex:1;display:flex;align-items:center;gap:10px;background:var(--tint);border-radius:22px;padding:0 14px;height:42px}
+.wrdot{width:9px;height:9px;border-radius:50%;background:#e5484d;animation:wblink 1s infinite}@keyframes wblink{50%{opacity:.3}}
+.wrw{flex:1;display:flex;align-items:center;gap:3px;height:20px;overflow:hidden}.wrw i{flex:none;width:3px;border-radius:2px;background:#176FD3;height:30%;animation:wbar 1s infinite ease-in-out}
+.wrw i:nth-child(3n){animation-delay:.2s}.wrw i:nth-child(3n+1){animation-delay:.45s}@keyframes wbar{50%{height:100%}}
+/* drawer, menu, sheets */
+.wscrim,.wmscrim,.wsheet,.wviewer{position:absolute;inset:0;z-index:20}
+.wscrim{background:rgba(0,0,0,.35)}
+.wdrawer{position:absolute;top:0;bottom:0;left:0;width:84%;background:var(--card);display:flex;flex-direction:column;box-shadow:8px 0 30px rgba(0,0,0,.2);animation:wslide .2s ease-out}
+@keyframes wslide{from{transform:translateX(-30px);opacity:.5}}
+.wdh{display:flex;align-items:center;justify-content:space-between;padding:10px 10px 6px 18px}.wdh b{font-size:17px}
+.wnewrow{display:flex;align-items:center;gap:10px;margin:4px 10px 6px;border:0;background:none;color:var(--ink);font-weight:700;font-size:14.5px;padding:8px;border-radius:12px}
+.wnewrow i{width:30px;height:30px;border-radius:50%;background:#176FD3;color:#fff;display:grid;place-items:center}.wnewrow:hover{background:var(--tint)}
+.wdscroll{flex:1;overflow:auto;padding:0 10px 10px}
+.wdg{display:flex;flex-direction:column;gap:2px;margin-top:10px}.wdg .lbl{font-size:11px;font-weight:700;letter-spacing:.5px;text-transform:uppercase;color:var(--mut);padding:4px 8px}
+.wthr{display:flex;align-items:center;border-radius:10px}.wthr.on,.wthr:hover{background:var(--tint)}
+.wthr>button:first-child{flex:1;min-width:0;border:0;background:none;color:var(--ink);text-align:left;padding:10px 8px;font-size:13.5px;font-weight:600}
+.wthr span{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wthr .wx{width:32px;height:32px;border:0;background:none;color:var(--mut);border-radius:8px;display:grid;place-items:center}.wthr .wx:hover{color:#d64545}
+.wdelall{margin-top:8px;border:0;background:none;color:#d64545;font-weight:600;font-size:13px;display:flex;align-items:center;gap:6px;padding:8px}
+.wtopic{display:flex;align-items:center;gap:10px;border:0;background:none;color:var(--ink);text-align:left;padding:9px 8px;border-radius:10px;font-size:13.5px}.wtopic:hover{background:var(--tint)}.wtopic svg{color:var(--blue2)}
+.wdf{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px 12px 14px;border-top:1px solid var(--line)}
+.wdf .btn.gray{height:34px;display:inline-flex;align-items:center;gap:6px;padding:0 12px;font-size:12.5px}
+.wpmenu{position:absolute;top:52px;right:10px;min-width:200px;background:var(--card);border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 40px -12px rgba(0,0,0,.35);padding:6px;display:flex;flex-direction:column}
+.wpmenu button{display:flex;align-items:center;gap:10px;border:0;background:none;color:var(--ink);text-align:left;padding:10px;border-radius:9px;font-size:14px}
+.wpmenu button:hover{background:var(--tint)}.wpmenu button:disabled{opacity:.4}.wpmenu .dng{color:#d64545}
+.wsheet{background:rgba(0,0,0,.4);display:flex;align-items:flex-end}
+.wsbox{width:100%;background:var(--card);border-radius:20px 20px 0 0;padding:20px 18px 26px;display:flex;flex-direction:column;gap:8px}
+.wsbox b{font-size:17px}.wsbox p{margin:0 0 8px;color:var(--mut);font-size:14px}.wsrow{display:flex;gap:10px}.wsrow .btn{flex:1;height:44px}
+.wviewer{background:#000;display:grid;place-items:center}.wviewer img{max-width:100%;max-height:100%}.wviewer .wib{position:absolute;top:10px;right:10px;color:#fff}
+/* camera */
+.wcam{flex:1;display:flex;flex-direction:column;background:#0b0f16;color:#fff}
+.wcamtop{display:flex;align-items:center;justify-content:space-between;padding:4px 8px}.wcamtop .wib,.wshut .wib{color:#fff}.wcamtop .wib:hover,.wshut .wib:hover{background:rgba(255,255,255,.1)}
+.wvf{flex:1;min-height:0;margin:6px 10px;border-radius:18px;overflow:hidden}.wvf img{width:100%;height:100%;object-fit:cover;display:block}
+.wgal{padding:8px 14px 0}.wgal span{font-size:11.5px;opacity:.75}.wgal>div{display:flex;gap:8px;margin-top:6px}
+.wgal button{width:52px;height:52px;border-radius:10px;overflow:hidden;border:2px solid transparent;padding:0;background:none}.wgal button.on{border-color:#fff}.wgal img{width:100%;height:100%;object-fit:cover}
+.wshut{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;justify-items:center;padding:12px 24px 18px}
+.wshutter{width:66px;height:66px;border-radius:50%;border:4px solid #fff;background:rgba(255,255,255,.25)}.wshutter:hover{background:rgba(255,255,255,.4)}
+.wrev{display:flex;gap:10px;padding:14px 16px 20px}.wrev .btn{flex:1;height:46px}
+/* voice */
+.wvoice{flex:1;display:flex;flex-direction:column;background:#0b0f16;color:#fff}
+.wvtop{display:flex;justify-content:center;padding:8px 0 0}.wvtop b{font-size:15px}
+.worbw{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:0 24px;text-align:center}
+.worb{width:150px;height:150px;border-radius:50%;border:0;background:radial-gradient(circle at 35% 30%,#5aa9ff,#176FD3 60%,#0d4a94);display:grid;place-items:center;box-shadow:0 0 0 0 rgba(42,139,242,.5);transition:transform .2s}
+.worb:hover{transform:scale(1.03)}.worb:disabled{filter:grayscale(.8);opacity:.6}
+.worb.listen{animation:wpulse 1.4s infinite}.worb.think{animation:wspin 1.2s linear infinite;background:conic-gradient(#176FD3,#5aa9ff,#176FD3)}.worb.speak{animation:wbreath 1s infinite}
+@keyframes wpulse{0%{box-shadow:0 0 0 0 rgba(90,169,255,.55)}100%{box-shadow:0 0 0 30px rgba(90,169,255,0)}}@keyframes wspin{to{transform:rotate(360deg)}}@keyframes wbreath{50%{transform:scale(1.07)}}
+.wwv{display:flex;gap:5px;align-items:center;height:40px}.wwv i{width:5px;height:14px;border-radius:3px;background:rgba(255,255,255,.9)}
+.worb.listen .wwv i,.worb.speak .wwv i{animation:wbar .8s infinite ease-in-out}.worb .wwv i:nth-child(2){animation-delay:.1s}.worb .wwv i:nth-child(3){animation-delay:.2s}.worb .wwv i:nth-child(4){animation-delay:.3s}
+.wvst{font-weight:700;font-size:15px}
+.wvcap{min-height:66px;max-width:300px;font-size:15px;line-height:1.5;opacity:.92}.wvcap.wvme{color:#9ec9ff}.wvd{opacity:.65;font-size:13px}
+.wvctl{display:flex;justify-content:center;gap:22px;padding:10px 0 26px}
+.wvctl button{width:56px;height:56px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:#fff;display:grid;place-items:center;font-weight:800}
+.wvctl button:hover{background:rgba(255,255,255,.2)}.wvctl button.off{background:#fff;color:#0b0f16}.wvctl .end{background:#e5484d}.wvctl .end:hover{background:#cf3a3f}
+.wpill textarea,.wpill textarea:focus{min-height:0!important;height:42px;border:0!important;box-shadow:none!important;outline:0!important;background:none!important;border-radius:0!important;padding:11px 0!important;margin:0}
+.wpill:focus-within{border-color:#176FD3}
+
+.wcrow{align-items:flex-end;gap:6px}
+.wpill{border-radius:24px;padding:2px 4px 2px 16px;min-height:46px;align-items:center;background:light-dark(#fff,#1d2635);border-color:light-dark(#dfe5ec,transparent);box-shadow:0 1px 1px rgba(0,0,0,.05)}
+.wpill .wib{width:40px;height:40px;color:var(--mut)}.wpill .wib:hover{color:var(--ink)}
+.wcomp .wsend{width:46px;height:46px}
+.wcomp{background:light-dark(#f3f5f8,#121924);border-top:0}
+.watt{margin-left:4px}
+.wct{text-align:left;padding-left:4px}
+
+.wvbub{display:flex;align-items:center;gap:10px;background:light-dark(#f1f4f8,#1d2635);border-radius:18px;padding:8px 14px 8px 8px;width:230px;max-width:100%}
+.wvbub.me{background:light-dark(#e8f1fc,#1d3557);border-radius:18px 18px 4px 18px}
+.wplay{width:36px;height:36px;border-radius:50%;border:0;background:#176FD3;color:#fff;display:grid;place-items:center;flex:none}.wplay:hover{background:#125fb6}
+.wplay svg{fill:currentColor}
+.wwave{flex:1;display:flex;align-items:center;gap:2px;height:26px}
+.wwave i{flex:1;min-width:2px;border-radius:2px;background:light-dark(#b8c4d3,#4a5a73)}
+.wvbub.on .wwave i{animation:wfill .08s linear forwards}
+@keyframes wfill{to{background:#176FD3}}
+.wvbub>span{font-size:12px;color:var(--mut);font-variant-numeric:tabular-nums}
+.wvt{font-size:12px;color:var(--mut);max-width:230px;text-align:right}
+.wtxt{display:inline-flex;align-items:center;gap:6px;margin:8px 0 2px;border:0;background:none;color:#176FD3;font-weight:700;font-size:12.5px;padding:2px 0}
+.wtxt:hover{text-decoration:underline}
+.wtxt+.wtx{margin-top:6px}
+/* no scroll bars */
+.wscr *{scrollbar-width:none}.wscr *::-webkit-scrollbar{display:none}
+textarea{scrollbar-width:none;-ms-overflow-style:none}textarea::-webkit-scrollbar{display:none;width:0;height:0}
+.wpill textarea{overflow-y:auto;resize:none}
+
+/* ===== web: soft, consistent palette ===== */
+.wscr{--wb:light-dark(#1f6fcf,#5ea3f2);--wbh:light-dark(#185fb3,#7ab4f5);--wsoft:light-dark(#eef4fc,#162338);--wline:light-dark(#e7ecf2,#233046);--wmut:light-dark(#647184,#9aa8bb);--wbg:light-dark(#ffffff,#0f1724)}
+.wscr,.wscr .sbar,.wscr .home,.wscr .wubar,.wscr .wapp,.wscr .whd,.wscr .wcomp,.wscr .wdrawer,.wscr .wsbox,.wscr .wpmenu{background:var(--wbg)}
+.wscr.wdark,.wscr.wdark .sbar,.wscr.wdark .home{background:#0b0f16}
+.wscr .wubar,.wscr .wchead,.wscr .whd,.wscr .wsec,.wscr .wft,.wscr .wdf{border-color:var(--wline)}
+.wscr .wurl{background:var(--wsoft);color:var(--ink)}
+.wscr .sub,.wscr small,.wscr .wsrc,.wscr .wdisc,.wscr .wct span,.wscr .wbv,.wscr .wcsrc,.wscr .wft{color:var(--wmut)}
+/* brand blue everywhere */
+.wscr .wlogo span,.wscr .wav,.wscr .wlg,.wscr .wnewrow i,.wscr .wplay,.wscr .wsend,.wscr .wfab,.wscr .waiopen{background:var(--wb);color:#fff}
+.wscr .wplay:hover,.wscr .wsend:hover,.wscr .wfab:hover,.wscr .waiopen:hover{background:var(--wbh)}
+.wscr .wlink,.wscr .wtxt,.wscr .wtopic svg,.wscr .wchg button>svg,.wscr .wacts button.on{color:var(--wb)}
+.wscr .wbt i,.wscr .wrw i{background:var(--wb)}.wscr .wbt{background:var(--wsoft)}
+.wscr .wvbub.on .wwave i{animation-name:wfill3}@keyframes wfill3{to{background:var(--wb)}}
+/* soft surfaces */
+.wscr .whero{background:var(--wsoft)}
+.wscr .waiopen{border-radius:18px;box-shadow:0 8px 18px -12px light-dark(rgba(31,111,207,.55),rgba(0,0,0,.6))}
+.wscr .wai-i{background:rgba(255,255,255,.18)}
+.wscr .wfab{box-shadow:0 8px 18px -10px light-dark(rgba(31,111,207,.6),rgba(0,0,0,.7))}
+.wscr .wnav button,.wscr .wsug .chip{border:0;background:var(--wsoft);color:var(--ink);font-weight:600}
+.wscr .whero .wsug .chip{background:var(--wbg)}
+.wscr .wnav button:hover,.wscr .wsug .chip:hover{background:light-dark(#e2edfb,#1d2e48);color:var(--wb)}
+.wscr .wtc,.wscr .wcs>div,.wscr .wchg button,.wscr .wsugv button,.wscr .wcard{border:1px solid var(--wline);border-radius:16px;background:var(--wbg);box-shadow:none}
+.wscr .wtc:hover,.wscr .wchg button:hover,.wscr .wsugv button:hover{border-color:light-dark(#cddcf0,#2c4166);background:var(--wsoft);transform:none;box-shadow:none}
+.wscr .wti{background:var(--wsoft);color:var(--wb);border-radius:12px}
+.wscr .wtools .btn.gray,.wscr .wfz{border-color:var(--wline);background:var(--wbg)}
+.wscr .wtools .btn.gray.on{background:var(--wsoft);border-color:var(--wb);color:var(--wb)}
+.wscr .wfz button+button{border-color:var(--wline)}
+.wscr .pill.p-rev{background:var(--wsoft);color:var(--wb)}
+.wscr .wcn .csel,.wscr .wcn .inp{border-color:var(--wline);border-radius:12px}
+/* CAG opinion cards: soft with a small coloured dot */
+.wscr .whc{border:0;border-left:0;background:var(--wsoft);border-radius:14px;padding:12px}
+.wscr .whc b{display:flex;align-items:center;gap:7px}.wscr .whc b i{width:8px;height:8px;border-radius:50%;flex:none}
+.wscr .whc.hok b i{background:#2f9e6b}.wscr .whc.hwa b i{background:#d39b2a}.wscr .whc.her b i{background:#d0574f}
+/* AI chat surfaces */
+.wscr .wme span,.wscr .wvbub.me{background:var(--wsoft)}
+.wscr .wvbub{background:light-dark(#f4f6f9,#162030)}
+.wscr .wwave i{background:light-dark(#c3cedb,#3a4a63)}
+.wscr .wacts button{color:var(--wmut)}.wscr .wacts button:hover{background:var(--wsoft);color:var(--ink)}
+.wscr .wcomp{background:light-dark(#f5f7fa,#0c131e)}
+.wscr .wpill{background:var(--wbg);border-color:var(--wline)}.wscr .wpill:focus-within{border-color:light-dark(#bcd3f1,#2c4166)}
+.wscr .wrp{background:var(--wsoft)}
+.wscr .wthr.on,.wscr .wthr:hover,.wscr .wtopic:hover,.wscr .wnewrow:hover,.wscr .wpmenu button:hover,.wscr .wib:hover{background:var(--wsoft)}
+.wscr .worb{background:radial-gradient(circle at 35% 30%,#7db6f5,#1f6fcf 62%,#16539c)}
+.wscr .btn.gray{border-color:var(--wline)}
+.wscr .wlite{background:var(--wsoft)}
+
+/* Claude-style chat */
+.wscr{--wbf:light-dark(#1f6fcf,#2b78d6)}
+.wscr .wlogo span,.wscr .wav,.wscr .wlg,.wscr .wnewrow i,.wscr .wplay,.wscr .wsend,.wscr .wfab,.wscr .waiopen{background:var(--wbf)}
+.wscr .waiopen small{color:rgba(255,255,255,.85)}
+.wscr .wct{text-align:center;padding:0}.wscr .wct b{font-size:14.5px;max-width:190px;margin:0 auto;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.wscr .wcbody{gap:18px;padding:18px 18px 12px}
+.wscr .wai{display:block}.wscr .wab{width:100%}
+.wscr .wtx{line-height:1.65;font-size:calc(15px * var(--wfz,1))}
+.wscr .wme span{border-radius:18px;padding:10px 15px}
+.wscr .wtyping{display:flex;align-items:center;padding:4px 0}
+.wspin{width:26px;height:26px;border-radius:8px;animation:wpul 1.2s ease-in-out infinite}@keyframes wpul{50%{transform:scale(.85);opacity:.6}}
+.wscr .wcomp{background:var(--wbg);border-top:0;padding:6px 12px 6px;position:relative}
+.wbox{border:1px solid var(--wline);border-radius:22px;background:var(--wbg);box-shadow:0 2px 10px -4px light-dark(rgba(20,40,80,.12),rgba(0,0,0,.5));padding:10px 10px 8px 14px;display:flex;flex-direction:column;gap:4px}
+.wbox:focus-within{border-color:light-dark(#c9d8ec,#2c4166)}
+.wbox textarea,.wbox textarea:focus{border:0!important;outline:0!important;box-shadow:none!important;background:none!important;resize:none;color:var(--ink);font:inherit;font-size:15.5px!important;line-height:1.45;padding:4px 0!important;min-height:0!important;max-height:120px;height:30px;margin:0;border-radius:0!important}
+.wtl{display:flex;align-items:center;gap:4px}.wsp{flex:1}
+.wtb{width:36px;height:36px;border-radius:12px;border:1px solid var(--wline);background:none;color:var(--wmut);display:grid;place-items:center}
+.wtb:hover,.wtb.on{background:var(--wsoft);color:var(--ink)}
+.wtb[data-w="rec"]{border:0}
+.wscr .wcomp .wsend{width:36px;height:36px;border-radius:12px}
+.wscr .watt{margin:2px 0 6px}
+.wplusm{position:absolute;left:12px;bottom:calc(100% - 4px);background:var(--wbg);border:1px solid var(--wline);border-radius:14px;box-shadow:0 14px 30px -12px rgba(0,0,0,.3);padding:6px;display:flex;flex-direction:column;min-width:190px;z-index:5}
+.wplusm button{display:flex;align-items:center;gap:10px;border:0;background:none;color:var(--ink);text-align:left;padding:10px;border-radius:10px;font-size:14px}.wplusm button:hover{background:var(--wsoft)}
+.wscr .wdisc{padding-top:6px}
+
+.wscr .n{background:var(--wsoft);color:var(--wb)}
+.wpan .dpb{max-height:calc(100dvh - var(--topH,66px) - 150px);overflow:auto;scrollbar-width:none}.wpan .dpb::-webkit-scrollbar{display:none}
+.wpan .dpb h4{margin:12px 8px 4px}
+
+.wpanh{width:100%;border:0;background:none;text-align:left;color:var(--ink);align-items:center;gap:12px;cursor:pointer}
+.wpanh>div{flex:1}.wpanh:hover{background:var(--tint)}
+.wchv{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;color:var(--mut);transition:transform .2s;transform:rotate(180deg);flex:none}
+.wpan.wcol .wchv{transform:none}.wpan.wcol .wpanh{border-bottom:0}
+.wpan .wpanh{display:flex;border-radius:0!important;box-shadow:none!important;outline:0;padding:16px 14px 14px 18px;min-height:0;transform:none!important;border-bottom:1px solid var(--line)}
+.wpan .wpanh:focus-visible{outline:2px solid #176FD3;outline-offset:-2px}
+.wpan .wpanh:hover{background:var(--tint)}
+.wpan .wpanh span:not(.wchv){display:block;font-size:13px;color:var(--mut);font-weight:400;margin-top:3px}
+
+.wscr .wme span{white-space:pre-wrap;overflow-wrap:anywhere;word-break:break-word}
+.wscr .wtx,.wscr .wvt,.wscr .wthr span{overflow-wrap:anywhere}
+.wmore{display:block;border:0;background:none;color:var(--wb);font-weight:700;font-size:13px;padding:6px 0 0;margin-left:auto}
+.wcnt{font-size:11.5px;color:var(--wmut);margin-right:4px;font-variant-numeric:tabular-nums}
+.wdown{position:absolute;left:50%;transform:translateX(-50%);bottom:132px;z-index:4;width:38px;height:38px;border-radius:50%;border:1px solid var(--wline);background:var(--wbg);color:var(--ink);display:grid;place-items:center;box-shadow:0 6px 16px -8px rgba(0,0,0,.35)}
+.wdown[hidden]{display:none}.wdown:hover{background:var(--wsoft)}
+.wscr .wct{flex:1;min-width:0}.wscr .wct b{max-width:none}
+
+/* WAJIBU website (mobile) */
+.wj{font-family:Urbanist,Inter,system-ui,sans-serif;background:#fff;color:#111418}
+.wscr .wj{--wjb:#176FD3}
+.wjh{position:sticky;top:0;z-index:5;display:flex;align-items:center;gap:8px;padding:8px 14px;background:#fff;box-shadow:0 1px 0 #eef0f3}
+.wjlogo svg{width:42px;height:42px;display:block}.wjsp{flex:1}
+.wjdon{border:0;border-radius:8px;background:var(--wjb);color:#fff;font:700 13.5px Urbanist,Inter,sans-serif;padding:9px 14px}.wjdon:hover{background:#125fb6}
+.wjham{width:40px;height:40px;border:0;background:none;color:#111418;border-radius:10px;display:grid;place-items:center}.wjham:hover{background:#f0f2f4}
+.wjnav{position:sticky;top:58px;z-index:4;background:#fff;border-bottom:1px solid #eef0f3;padding:6px 10px 12px;display:flex;flex-direction:column}
+.wjnav button{display:flex;justify-content:space-between;align-items:center;border:0;background:none;color:#111418;font:600 15px Urbanist,Inter,sans-serif;padding:11px 8px;border-radius:8px;text-align:left}
+.wjnav button:hover{background:#f0f2f4}.wjnav button.on{color:var(--wjb)}
+.wjnav .wjnai{justify-content:flex-start;gap:8px;margin-top:6px;background:#eef5fd;color:var(--wjb)}
+.wjhero{min-height:430px;background-size:cover;background-position:center;display:flex;flex-direction:column;justify-content:center;padding:40px 22px;color:#fff}
+.wjhero h1{font:800 29px/1.15 Urbanist,Inter,sans-serif;margin:0 0 26px;letter-spacing:-.3px}
+.wjbtns{display:flex;gap:10px}.wjb{border:0;border-radius:6px;background:var(--wjb);color:#fff;font:700 14.5px Urbanist,Inter,sans-serif;padding:13px 22px}.wjb:hover{background:#125fb6}
+.wjs{padding:44px 22px}.wjs h2{font:800 28px/1.15 Urbanist,Inter,sans-serif;margin:0 0 12px;color:#2b2f36}
+.wjs h3{font:700 16px Urbanist,Inter,sans-serif;margin:0 0 6px;color:#5d6673}
+.wjs p{margin:0 0 14px;color:#6b7480;font-size:15.5px;line-height:1.6}
+.wjl{border:0;background:none;color:var(--wjb);font:600 15px Urbanist,Inter,sans-serif;padding:0}.wjl:hover{text-decoration:underline}
+.wjabout{background:linear-gradient(180deg,#fff,#f8f9fb)}
+.wjimp{background:linear-gradient(135deg,#3b82f6,#2563eb 50%,#1e40af);color:#fff}.wjimp h2{color:#fff}.wjimp p{color:rgba(255,255,255,.88)}
+.wjst{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px}
+.wjst div{border-radius:14px;padding:18px 10px;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center;color:#fff}
+.wjst b{font:800 13px/1.2 Urbanist,Inter,sans-serif;text-transform:uppercase}.wjst span{font:700 14px Urbanist,Inter,sans-serif;opacity:.95}
+.wjfa{text-align:center}.wjfa h2{color:#111418}
+.wjar{display:flex;flex-direction:column;gap:12px;text-align:left;margin-top:6px}
+.wjar>div{border:1px solid #e6e9ee;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;background:#fff}
+.wjar span{width:40px;height:40px;border-radius:10px;background:#eef5fd;color:var(--wjb);display:grid;place-items:center}
+.wjar b{font:700 16px/1.3 Urbanist,Inter,sans-serif;color:#111418}.wjar small{color:#6b7480;font-size:14px}
+.wjnews{background:#f3f7fd}.wjnews article{background:#fff;border-radius:14px;padding:18px;margin-top:14px;box-shadow:0 1px 2px rgba(16,24,40,.05)}
+.wjnews article small{font-size:11.5px;font-weight:700;letter-spacing:.4px;color:var(--wjb)}
+.wjnews article b{display:block;font:700 17px/1.3 Urbanist,Inter,sans-serif;margin:6px 0 8px;color:#111418}
+.wjnews article p{font-size:14.5px;margin-bottom:10px}
+.wjsub{text-align:center}.wjform{display:flex;flex-direction:column;gap:10px}.wjform .inp{height:48px;border-radius:8px;font-size:15px}
+.wjf{background:#111418;color:#fff;padding:30px 22px 90px;display:flex;flex-direction:column;align-items:flex-start;gap:6px}
+.wjf p{margin:6px 0 0;font:700 15px Urbanist,Inter,sans-serif}.wjf small{color:#9aa3ad;font-size:13px}
+.wjfab{position:absolute;right:12px;bottom:14px;z-index:6;display:flex;align-items:center;gap:10px;border:0;border-radius:999px;padding:9px 18px 9px 10px;background:linear-gradient(135deg,#2a80e0,#176FD3);color:#fff;box-shadow:0 12px 28px -10px rgba(23,111,211,.85),0 0 0 6px rgba(23,111,211,.12);text-align:left}
+.wjfab:hover{filter:brightness(1.06)}
+.wjfab>span:first-child{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.2);display:grid;place-items:center}
+.wjfab small{display:block;font:700 9.5px/1 Inter,sans-serif;letter-spacing:.6px;text-transform:uppercase;opacity:.85}.wjfab b{font:800 15px/1.2 Urbanist,Inter,sans-serif}
+.wscr .wj *{scrollbar-width:none}
+
+.wjlogo{display:flex;align-items:center;gap:9px;min-width:0}
+.wjlogo svg{width:38px;height:38px;flex:none}
+.wjwm{display:flex;flex-direction:column;line-height:1.05;min-width:0}
+.wjwm b{font:800 17px/1 Urbanist,Inter,sans-serif;letter-spacing:.8px;color:#1b2a4a}
+.wjwm small{font:600 8.5px/1.2 Inter,sans-serif;letter-spacing:.3px;color:#2fa84f;text-transform:uppercase;white-space:nowrap}
+.wjh{min-height:58px}
+.wjdon,.wjham{flex:none}
+.wjf .wjwm b{color:#fff}.wjf .wjlogo svg circle:first-child{fill:#fff}
+.wjfab{align-items:center}.wjfab>span:last-child{display:flex;flex-direction:column;justify-content:center}
+.wjst div svg{display:block}
+.wjnav button svg{flex:none}
+
+.wscr .wj .wjdon,.wscr .wj .wjb{color:#fff!important}
+.wscr .wjfab,.wscr .wjfab b{color:#fff!important}.wscr .wjfab small{color:rgba(255,255,255,.85)!important}
+.wscr .wj .wjhero h1{color:#fff}
+.wscr .wj .wjl{color:#176FD3}
+.wjf{gap:10px}
+
+.wscr .wj .wjham,.wscr .wj .wjnav button{color:#111418!important}.wscr .wj .wjham svg{stroke:#111418;width:24px;height:24px}
+.wscr .wj .wjnav button.on,.wscr .wj .wjnav .wjnai{color:#176FD3!important}
+.wscr .wj .inp{background:#fff!important;color:#111418!important;border:1px solid #dfe3e8!important}
+.wscr .wj .wjar>div,.wscr .wj .wjnews article{background:#fff}
+
+.wjwk{background:#fff}
+.wjtag{display:inline-flex;align-items:center;gap:6px;background:#eef5fd;color:#176FD3;font:700 12.5px Inter,sans-serif;border-radius:99px;padding:6px 12px;margin-bottom:12px}
+.wjwk h2{font-size:24px}
+.wjch{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.wjch button{display:flex;align-items:center;gap:12px;text-align:left;border:1px solid #e6e9ee;border-radius:14px;background:#fff;padding:13px 12px;color:#111418!important}
+.wjch button:hover{border-color:#b9d2f2;background:#f6f9fe}
+.wjch button>span:first-child{width:40px;height:40px;border-radius:12px;background:#eef5fd;color:#176FD3;display:grid;place-items:center;flex:none}
+.wjch button>span:nth-child(2){flex:1;display:flex;flex-direction:column;gap:2px}
+.wjch b{font:700 15.5px Urbanist,Inter,sans-serif}.wscr .wjch small{color:#6b7480!important;font-size:13px;line-height:1.35}
+.wjch button>svg{transform:rotate(-90deg);color:#9aa3ad;flex:none}
+.wjhow{margin-top:14px;background:#f3f7fd;border-radius:14px;padding:14px 16px}
+.wjhow b{display:flex;align-items:center;gap:7px;font:700 15px Urbanist,Inter,sans-serif;color:#111418}
+.wjhow ol{margin:8px 0 8px;padding-left:20px;color:#4b5563;font-size:14.5px;line-height:1.7}
+.wscr .wjhow small{color:#2f9e6b!important;font-weight:700;font-size:13px}
+.wjnav .wjnai+.wjnai{margin-top:6px}
+.wscr .wjfab small{font:600 11.5px/1.2 Inter,sans-serif!important;letter-spacing:0!important;text-transform:none!important;color:#e6f0ff!important;opacity:1}
+.wjfab{padding:9px 20px 9px 10px;background:linear-gradient(135deg,#1f73d9,#145cb0)}
+.wjfab>span:last-child{gap:2px}
+
+/* Wajibika AI: own look */
+.wscr .wchead{background:var(--wbf);border-bottom:0;padding:6px 8px 10px}
+.wscr .wchead .wib,.wscr .wchead .wct b{color:#fff}.wscr .wchead .wib:hover{background:rgba(255,255,255,.14)}
+.wscr .wubar{border-bottom:0}
+.wscr .wapp{background:light-dark(#f4f7fb,#0c131e)}
+.wscr .wcbody{padding:16px 14px 12px;gap:16px}
+.wah2{display:flex;align-items:center;gap:7px;margin-bottom:6px;font-size:12.5px;color:var(--wmut)}.wah2 .wav{width:22px;height:22px;border-radius:7px;margin:0}
+.wscr .wab{background:var(--wbg);border:1px solid var(--wline);border-radius:4px 16px 16px 16px;padding:12px 14px}
+.wscr .wtyping{background:none;border:0;padding:0}
+.wscr .wme span{background:var(--wbf);color:#fff;border-radius:16px 16px 4px 16px}
+.wscr .wme .wmore{color:#dbe9ff}
+.wscr .wvbub.me{background:var(--wbf)}.wscr .wvbub.me .wplay{background:#fff;color:var(--wbf)}.wscr .wvbub.me .wwave i{background:rgba(255,255,255,.5)}.wscr .wvbub.me>span{color:#e6f0ff}
+.wscr .wwel{gap:16px}
+.wscr .wwel h2{font-size:calc(18px * var(--wfz,1))}
+.wscr .wsugv{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.wscr .wsugv button{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:12px;border-radius:14px;font-size:calc(13px * var(--wfz,1));line-height:1.3;min-height:92px}
+.wscr .wsugv button span{width:30px;height:30px;border-radius:9px;background:var(--wsoft);color:var(--wb);display:grid;place-items:center}
+.wscr .wcomp{background:light-dark(#f4f7fb,#0c131e);padding:8px 10px 6px}
+.wrow2{display:flex;align-items:flex-end;gap:8px}
+.wpill2{flex:1;min-width:0;display:flex;align-items:flex-end;gap:2px;background:var(--wbg);border:1px solid var(--wline);border-radius:26px;padding:3px 4px;box-shadow:0 2px 8px -4px light-dark(rgba(20,40,80,.15),rgba(0,0,0,.5))}
+.wpill2:focus-within{border-color:light-dark(#bcd3f1,#2c4166)}
+.wpill2 .wib{width:40px;height:40px;color:var(--wmut);flex:none}.wpill2 .wib:hover{color:var(--wb);background:var(--wsoft)}
+.wpill2 textarea,.wpill2 textarea:focus{flex:1;min-width:0;border:0!important;outline:0!important;box-shadow:none!important;background:none!important;resize:none;color:var(--ink);font:inherit;font-size:15px!important;line-height:1.4;padding:10px 2px!important;min-height:0!important;max-height:120px;height:40px;margin:0;border-radius:0!important}
+.wpill2 .wcnt{align-self:center}
+.wscr .wrow2 .wsend{width:48px;height:48px;border-radius:50%;flex:none}
+.wscr .watt{margin:0 0 8px 6px}
+
+/* softer AI colours */
+.wscr .wchead{background:var(--wbg);border-bottom:1px solid var(--wline)}
+.wscr .wchead .wib{color:var(--wb)}.wscr .wchead .wct b{color:var(--ink)}.wscr .wchead .wib:hover{background:var(--wsoft)}
+.wscr .wme span{background:light-dark(#e3eefc,#1c3352);color:var(--ink)}
+.wscr .wme .wmore{color:var(--wb)}
+.wscr .wvbub.me{background:light-dark(#e3eefc,#1c3352)}.wscr .wvbub.me .wplay{background:var(--wbf);color:#fff}.wscr .wvbub.me .wwave i{background:light-dark(#a9c3e6,#3d5a85)}.wscr .wvbub.me>span{color:var(--wmut)}
+.wscr .wrow2 .wsend{background:light-dark(#3d86dc,#2b78d6)}
+.wscr .wrow2 .wsend:hover{background:var(--wbf)}
 </style>
 </head>
 <body>
@@ -1010,7 +1466,7 @@ const PHOTO=`<img src="${DEMOPICS.road}" alt="" style="width:100%;display:block"
 
 /* ---------------- text ---------------- */
 const T={
-sw:{sub:'Mfano wa mfumo · WAJIBU',views:['Mwananchi (WhatsApp)','Simu ya kawaida (USSD/SMS)','Portal ya WAJIBU'],reset:'Anza upya',biz:'Akaunti ya biashara',typing:'inaandika…',back:'Rudi',msg:'Ujumbe',online:'Bonyeza hapa kwa maelezo ya biashara',
+sw:{sub:'Mfano wa mfumo · WAJIBU',views:['WhatsApp','Tovuti (AI)','Simu ya kitochi','Portal ya WAJIBU'],reset:'Anza upya',biz:'Akaunti ya biashara',typing:'inaandika…',back:'Rudi',msg:'Ujumbe',online:'Bonyeza hapa kwa maelezo ya biashara',
  day:'Leo',enc:'Ujumbe kwenye mazungumzo haya umelindwa. Tunatumia namba yako kukujibu na kukutumia taarifa tu.',
  h1:'Maswali ya mfano',lead:'Gusa moja, au andika lako.',
  g1:'Maswali',g1s:'AI inajibu kutoka kwenye maudhui yaliyoidhinishwa na WAJIBU tu, na inaonyesha chanzo.',
@@ -1022,7 +1478,7 @@ sw:{sub:'Mfano wa mfumo · WAJIBU',views:['Mwananchi (WhatsApp)','Simu ya kawaid
  Q:{cag:'Hati ya CAG ina maana gani?',rev:'Halmashauri inapata pesa wapi?',tax:'Ni kodi gani halmashauri inakusanya?',proc:'Zabuni za serikali zinatangazwa wapi?',cor:'Nitatoaje taarifa ya rushwa?',bud:'Bajeti ya Halmashauri ya Kilosa ikoje?',road:'Barabara ya kijiji chetu imeachwa nusu tangu mwaka jana. Nifanye nini?',myhati:'Kilosa ilipata hati gani?',health:'Afya: pesa zitatumikaje?'},
  topics:'Mada zote',tp:[['bud','Bajeti ya halmashauri','Pesa zimepangwa kwa nini'],['rev','Mapato ya halmashauri','Pesa zinatoka wapi'],['cag','Ripoti za CAG','Hesabu zilikaguliwa vipi'],['tax','Kodi na ushuru','Unalipa nini, na kwa nini'],['proc','Manunuzi ya umma','Zabuni na mikataba'],['cor','Kutoa taarifa za rushwa','Kwa usalama']],
  voiceTr:'Hati ya CAG ina maana gani?',light:'Mwanga',dark:'Giza'},
-en:{sub:'System prototype · WAJIBU',views:['Citizen (WhatsApp)','Basic phone (USSD/SMS)','WAJIBU Portal'],reset:'Restart',biz:'Business account',typing:'typing…',back:'Back',msg:'Message',online:'Tap here for business info',
+en:{sub:'System prototype · WAJIBU',views:['WhatsApp','Web (AI)','Feature phone','WAJIBU Portal'],reset:'Restart',biz:'Business account',typing:'typing…',back:'Back',msg:'Message',online:'Tap here for business info',
  day:'Today',enc:'Messages in this chat are protected. We use your number only to reply and send you alerts.',
  h1:'Sample questions',lead:'Tap one, or type your own.',
  g1:'Questions',g1s:'The AI answers only from content WAJIBU has approved, and shows the source.',
@@ -1150,8 +1606,8 @@ const GUARD=[['emerg',/(dharura|ajali|moto unawaka|nisaidie haraka|nimeibiwa|nim
  ['rude',/\b(mjinga|pumbavu|mpumbavu|stupid|idiot|useless|shut up|fuck|shit)\b/],
  ['oos',/(hali ya hewa|weather|mpira|soka|simba|yanga|football|mapenzi|mpenzi|love|girlfriend|mapishi|recipe|kupika|kichekesho|utani|joke|bitcoin|crypto|forex|bet|kubeti|homa|malaria|dalili|symptom|dawa gani|medicine for|kazi ya nyumbani|homework|filamu|movie|muziki|song|nyimbo|horoscope|nyota)/]];
 
-Object.assign(U.sw,{srcT:'Ongeza taarifa kutoka chanzo kilichoidhinishwa',srcS:'Unaweza kuchagua maudhui yaliyochapishwa tu, ili ujumbe uwe na taarifa za kweli.',srcPick:'Chagua maudhui…',srcIns:'Weka kwenye ujumbe',srcUsed:'Chanzo',smsPrev:'Hakikisho la SMS (simu ya kawaida)',chars:'herufi',smsN:'SMS',srcNone:'Hakuna chanzo – andika mwenyewe',srcAdded:'Taarifa kutoka chanzo kilichoidhinishwa zimewekwa.'});
-Object.assign(U.en,{srcT:'Add information from an approved source',srcS:'Only published content can be chosen, so the message carries true information.',srcPick:'Choose content…',srcIns:'Insert into message',srcUsed:'Source',smsPrev:'SMS preview (basic phone)',chars:'characters',smsN:'SMS',srcNone:'No source – write your own',srcAdded:'Information from an approved source was inserted.'});
+Object.assign(U.sw,{srcT:'Ongeza taarifa kutoka chanzo kilichoidhinishwa',srcS:'Unaweza kuchagua maudhui yaliyochapishwa tu, ili ujumbe uwe na taarifa za kweli.',srcPick:'Chagua maudhui…',srcIns:'Weka kwenye ujumbe',srcUsed:'Chanzo',smsPrev:'Hakikisho la SMS (simu ya kitochi)',chars:'herufi',smsN:'SMS',srcNone:'Hakuna chanzo – andika mwenyewe',srcAdded:'Taarifa kutoka chanzo kilichoidhinishwa zimewekwa.'});
+Object.assign(U.en,{srcT:'Add information from an approved source',srcS:'Only published content can be chosen, so the message carries true information.',srcPick:'Choose content…',srcIns:'Insert into message',srcUsed:'Source',smsPrev:'SMS preview (feature phone)',chars:'characters',smsN:'SMS',srcNone:'No source – write your own',srcAdded:'Information from an approved source was inserted.'});
 const SMS={sw:{bud:'Bajeti ya Kilosa DC 2026/27 ni shilingi bilioni 61 na milioni 200. Mishahara bilioni 38 na milioni 400, miradi bilioni 18 na milioni 700, mengineyo bilioni 4 na milioni 100.',cag:'Ripoti za CAG 2024/25 (Aprili 2026): 99% ya taasisi zilipata hati safi. Uliza WAJIBU kwa WhatsApp hati ya halmashauri yako.',cor:'Ukiona rushwa, toa taarifa TAKUKURU kwa kupiga 113 bure. Unaweza kutoa taarifa bila kutaja jina lako.',pro:'Zabuni za serikali hutangazwa kwenye mfumo wa NeST. Una haki kuuliza halmashauri nani alipata mkataba na kwa kiasi gani.',fa:'Sheria ya Fedha 2026 imeleta mabadiliko ya kodi. Uliza WAJIBU kwa WhatsApp kujua yanayokuhusu.',hl:'Huduma za afya Mtwara MC: uliza WAJIBU kwa WhatsApp kujua dawa na huduma zinazopatikana.'},
  en:{bud:'Kilosa DC budget 2026/27 is 61 billion 200 million shillings. Salaries 38 billion 400 million, projects 18 billion 700 million, other costs 4 billion 100 million.',cag:'CAG 2024/25 reports (April 2026): 99% of entities got a clean opinion. Ask WAJIBU on WhatsApp about your council.',cor:'If you see corruption, report it to PCCB (TAKUKURU) by calling 113 for free. You can report without giving your name.',pro:'Government tenders are advertised on the NeST system. You have the right to ask your council who won a contract and for how much.',fa:'The Finance Act 2026 changed some taxes. Ask WAJIBU on WhatsApp to find out what affects you.',hl:'Mtwara MC health services: ask WAJIBU on WhatsApp about available medicines and services.'}};
 function smsFor(d){const c=S.custom.find(x=>x.q===d.t);if(c)return c.a;return SMS[S.lang][d.id]||(d.t+'. '+(sw()?'Uliza WAJIBU kwa WhatsApp kujua zaidi.':'Ask WAJIBU on WhatsApp to learn more.'))}
@@ -1296,7 +1752,7 @@ function regModal(){const U2=u();const sel=(id,arr)=>`<select class="inp" id="${
   <div class="row" style="justify-content:flex-end"><button class="btn gray" data-act="closemodal">${U2.cancel}</button><button class="btn" data-act="dbsave">${ic('check',18)}${U2.fSave}</button></div></div></div>`}
 
 Object.assign(U.sw,{lg:{idL:'Barua pepe au namba ya simu',idReq:'Weka barua pepe au namba ya simu.',idBad:'Weka barua pepe sahihi, au namba ya simu kama 0715 300 412.',noAcc2:'Huna akaunti? Muulize msimamizi wa mfumo.',brandS:'Dashibodi ya wafanyakazi',h:'Taarifa sahihi za pesa za umma, kwa kila mwananchi.',p:'Simamia maudhui ya chatbot, jibu wananchi wanaohitaji mtu, na tuma taarifa kwa jamii za Morogoro na Mtwara.',
- tps:[['Maudhui yaliyoidhinishwa tu','AI inajibu kutoka kwenye vyanzo ulivyothibitisha.'],['Taarifa binafsi zinalindwa','Nani amekubali, nani anaweza kufanya nini, na historia ya kila hatua.'],['Kwa wananchi wote','Kiswahili, sauti na SMS kwa simu za kawaida.']],
+ tps:[['Maudhui yaliyoidhinishwa tu','AI inajibu kutoka kwenye vyanzo ulivyothibitisha.'],['Taarifa binafsi zinalindwa','Nani amekubali, nani anaweza kufanya nini, na historia ya kila hatua.'],['Kwa wananchi wote','Kiswahili, sauti na SMS kwa simu za kitochi.']],
  stats:[['2,846','Wananchi'],['4 ','Halmashauri'],['24 h','Lengo la jibu']],
  t:'Karibu tena',s:'Ingia kusimamia majibu na taarifa kwa wananchi.',m:['Barua pepe','Namba ya simu'],
  eL:'Barua pepe ya kazi',eH:'Tumia barua pepe uliyoalikwa nayo, mf. jina@wajibu.or.tz',pL:'Namba ya simu',pH:'Namba iliyosajiliwa, mf. 0715 300 412',
@@ -1309,7 +1765,7 @@ Object.assign(U.sw,{lg:{idL:'Barua pepe au namba ya simu',idReq:'Weka barua pepe
  fT:'Weka upya nenosiri',fS:'Tutakutumia namba ya siri.',fL:'Barua pepe au namba ya simu',fGo:'Tuma namba ya siri',fReq:'Weka barua pepe au namba ya simu.',oV:'Inathibitisha…',nT:'Weka nenosiri jipya',nS:'Tumia herufi 8 au zaidi.',nP:'Nenosiri jipya',nC:'Rudia nenosiri',nGo:'Hifadhi nenosiri',nErr:'Nenosiri halilingani au ni fupi.',nDone:'Nenosiri limebadilishwa.',fDoneT:'Angalia barua pepe yako',fDoneS:'Kama akaunti ipo, tumetuma kiungo kwenda',fBack:'Rudi kuingia',
  foot1:'Imelindwa · PDPA 2022',foot2:'Msaada: msimamizi wa mfumo'}});
 Object.assign(U.en,{lg:{idL:'Email or phone number',idReq:'Enter your email or phone number.',idBad:'Enter a valid email, or a phone number like 0715 300 412.',noAcc2:'No account? Ask the admin.',brandS:'Staff dashboard',h:'Accurate public-money information, for every citizen.',p:'Manage the chatbot’s content, answer citizens who need a person, and send alerts to communities in Morogoro and Mtwara.',
- tps:[['Approved content only','The AI answers from sources you have verified.'],['Personal data protected','Who agreed, who can do what, and a record of every action.'],['For every citizen','Kiswahili, voice and SMS for basic phones.']],
+ tps:[['Approved content only','The AI answers from sources you have verified.'],['Personal data protected','Who agreed, who can do what, and a record of every action.'],['For every citizen','Kiswahili, voice and SMS for feature phones.']],
  stats:[['2,846','Citizens'],['4','Councils'],['24 h','Reply goal']],
  t:'Welcome back',s:'Sign in to manage answers and citizen alerts.',m:['Email','Phone number'],
  eL:'Work email',eH:'Use the email you were invited with, e.g. name@wajibu.or.tz',pL:'Phone number',pH:'Your registered number, e.g. 0715 300 412',
@@ -1414,8 +1870,8 @@ function saveCsv(name,csv){const W=sw(),ok=()=>toast(W?'Faili limehifadhiwa: '+n
   try{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['\ufeff'+csv],{type:'text/csv'}));a.download=name;document.body.appendChild(a);a.click();a.remove();ok()}
   catch(_){try{navigator.clipboard.writeText(csv).then(()=>toast(W?'CSV imenakiliwa.':'CSV copied.'),()=>toast(W?'Imeshindwa kupakua.':'Download failed.','err'))}catch(e){toast(W?'Imeshindwa kupakua.':'Download failed.','err')}}}
 (async()=>{try{if(!(window.claude&&claude.use))return;const [d,tt]=await Promise.all([claude.use('dictation'),claude.use('tts')]);DICT=d;TTS=tt;
- if(DICT){DICT.onPartial(({text})=>{if(S.rec){S.rec.part=text;upRec()}});DICT.onFinal(({text})=>{if(S.rec){S.rec.fin=((S.rec.fin||'')+' '+text).trim();S.rec.part='';upRec()}})}
- if(TTS){TTS.onState(({state})=>{if(state==='idle'&&S.speaking){const m=S.speaking;S.speaking=null;clearTimeout(m._tm);m.playing=false;m.played=true;draw()}})}}catch(_){}})();
+ if(DICT){DICT.onPartial(({text})=>{if(S.rec){S.rec.part=text;upRec()}else if(S.web&&S.web.rec){S.web.rec.part=text;wUpRec()}});DICT.onFinal(({text})=>{if(S.rec){S.rec.fin=((S.rec.fin||'')+' '+text).trim();S.rec.part='';upRec()}else if(S.web&&S.web.rec){const r=S.web.rec;r.fin=((r.fin||'')+' '+text).trim();r.part='';wUpRec()}})}
+ if(TTS){TTS.onState(({state})=>{if(state==='idle'&&S.web){const Wb=S.web;if(Wb.spk!=null){Wb.spk=null;if(S.view==='web')draw()}if(Wb.vspk){Wb.vspk=false;if(Wb.scr==='voice'&&Wb.v.ph==='speak'){Wb.v.ph='idle';draw()}}}if(state==='idle'&&S.speaking){const m=S.speaking;S.speaking=null;clearTimeout(m._tm);m.playing=false;m.played=true;draw()}})}}catch(_){}})();
 function upRec(){const iv=$('#ivrlive');if(iv&&S.rec)iv.textContent=((S.rec.fin||'')+' '+(S.rec.part||'')).trim()||'…';const e=$('#rlive');if(e&&S.rec)e.textContent=((S.rec.fin||'')+' '+(S.rec.part||'')).trim()||t().recHint}
 const plain=h=>String(h||'').replace(/<br\s*\/?>/g,'. ').replace(/<\/span>/g,'. ').replace(/<[^>]+>/g,' ').replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&#39;/g,"'").replace(/(\s*\.\s*){2,}/g,'. ').replace(/\s+/g,' ').trim();
 const estMs=txt=>Math.max(2500,txt.split(/\s+/).length*420+600);
@@ -1762,7 +2218,7 @@ function fpScreen(){const F=S.fp,T=fpT(),W=fw();let body='',L='',R='',cls='';
   return `<div class="fpst"><span class="sig"><i></i><i></i><i></i><i></i></span><span>${T.op}</span>${un?`<span>${ic('mail',12)}</span>`:''}<span class="bat"><i></i></span></div>
    <div class="fpb ${cls}">${body}</div><div class="fpsk"><span>${L}</span><span>${F.scr==='inbox'||F.scr==='pmenu'||F.scr==='chat'||F.scr==='ussd'&&!F.node.end?'▲▼':''}</span><span>${R}</span></div>`}
 function fpPhone(){const K=[['1','·○'],['2','ABC'],['3','DEF'],['4','GHI'],['5','JKL'],['6','MNO'],['7','PQRS'],['8','TUV'],['9','WXYZ'],['*','⇧'],['0','␣'],['#','♪']];
-  return `<div class="fpwrap"><div class="fp fpb2" id="fp" aria-label="${sw()?'Simu ya kawaida':'Basic phone'}"><div class="fptop"><i class="cam"></i><i class="spk"></i></div>
+  return `<div class="fpwrap"><div class="fp fpb2" id="fp" aria-label="${sw()?'Simu ya kitochi':'Feature phone'}"><div class="fptop"><i class="cam"></i><i class="spk"></i></div>
    <div class="fpscr" id="fpscr" aria-live="polite">${fpScreen()}</div>
    <div class="fpbrand">WAJIBU</div>
    <div class="fpnav2"><button data-fk="L" class="sk2" aria-label="Left soft key"><i></i></button><button data-fk="CALL" class="ck" aria-label="Call">${ic('phone',18)}</button>
@@ -1770,7 +2226,7 @@ function fpPhone(){const K=[['1','·○'],['2','ABC'],['3','DEF'],['4','GHI'],['
     <button data-fk="R" class="sk2 skr" aria-label="Right soft key"><i></i></button><button data-fk="END" class="ek" aria-label="End">${ic('phone',18)}</button></div>
    <div class="fpgrid2">${K.map(([k,s2])=>`<button data-fk="${k}"><b>${k}</b><small>${s2}</small></button>`).join('')}</div></div></div>`}
 function fpPanel(){const W=sw();const it=(a,i,t,d)=>`<button class="dq" data-fa="${a}"><span class="dqi">${ic(i,17)}</span><span class="dqt">${t}<small>${d}</small></span></button>`;
-  const ttl=W?'Simu ya kawaida':'Basic phone';
+  const ttl=W?'Simu ya kitochi':'Feature phone';
   return `<div id="demoP" class="${S.demo?'open':''}" role="dialog" aria-label="${ttl}"><div class="dph"><div><b>${ttl}</b><span>${W?'Bila intaneti. Bonyeza vitufe au tumia kibodi.':'No internet. Press the keys or use your keyboard.'}</span></div><button class="ic" data-act="demotoggle" aria-label="Close" style="color:var(--mut)">${ic('x',20)}</button></div>
    <div class="dpb"><h4>USSD</h4>${it('dial','phone',W?`Piga ${FPCODE}`:`Dial ${FPCODE}`,W?'Bajeti, CAG, uliza swali, jisajili au acha taarifa':'Budget, CAG, ask, register or stop alerts')}
    <h4>${W?'Simu ya sauti':'Voice call'}</h4>${it('call','phone',W?`Piga ${IVRNUM} (bure)`:`Call ${IVRNUM} (free)`,W?`Majibu yaliyorekodiwa. Simu ${S.ivr.pp} kwa siku, dakika ${S.ivr.min} kila moja. Umetumia ${Math.min(S.fp.calls||0,S.ivr.pp)}/${S.ivr.pp} leo.`:`Recorded answers. ${S.ivr.pp} calls a day, ${S.ivr.min} min each. Used ${Math.min(S.fp.calls||0,S.ivr.pp)}/${S.ivr.pp} today.`)}
@@ -1867,6 +2323,302 @@ function ivrScreen(){const O=S.fp.out,W=fw();const rec=O.node&&O.node.rec&&O.rec
    <span>${O.stage==='ring'?(W?'Inapiga…':'Calling…'):`<span id="fpot">${fmtDur(Date.now()-O.t0)}</span>`}</span>
    ${O.stage==='on'?`${rec?`<p class="recl"><i></i>${W?'Inarekodi swali lako… bonyeza # ukimaliza':'Recording your question… press # when done'}</p><p class="cap" id="ivrlive">${esc(((S.rec&&((S.rec.fin||'')+' '+(S.rec.part||'')))||'').trim()||(W?'Sema sasa…':'Speak now…'))}</p>`:`<p class="cap">${O.speaking?'🔊 ':''}${esc(O.cap||'')}</p>`}${O.last&&Date.now()-O.lastT<1500?`<em class="dtmf">${esc(O.last)}</em>`:''}`:''}</div>`}
 setInterval(()=>{const O=S.fp&&S.fp.out,e=$('#fpot');if(e&&O&&O.stage==='on')e.textContent=fmtDur(Date.now()-O.t0);if(O&&O.stage==='on'&&!O.lim&&O.id!=='time'&&Date.now()-O.t0>=S.ivr.min*60000){if(S.rec&&S.rec.ivr){if(DICT&&!S.rec.nodict)DICT.stop().catch(()=>{});S.rec=null}ivrGo('time')}},500);
+
+
+/* ---------------- citizen web platform: one-page website + Wajibika AI app ---------------- */
+Object.assign(P,{wthu:'M7 11v9H4v-9zM7 11l4-8c2 0 3 1 2.6 3L13 10h6a2 2 0 0 1 2 2.4l-1.2 6A2 2 0 0 1 17.8 20H7',wthd:'M7 13V4H4v9zM7 13l4 8c2 0 3-1 2.6-3L13 14h6a2 2 0 0 0 2-2.4l-1.2-6A2 2 0 0 0 17.8 4H7',
+ wretry:'M20 12a8 8 0 1 1-2.6-5.9M20 4v5h-5',wdots:'M12 5.2h.01M12 12h.01M12 18.8h.01',wwave:'M4 10v4M8 7v10M12 4v16M16 7v10M20 10v4',wmenu:'M4 7h16M4 12h10M4 17h16',warr:'M12 19V5M6 11l6-6 6 6',wchev:'M6 9l6 6 6-6',wplus:'M12 5v14M5 12h14',wnew:'M12 5H5v14h14v-7M17 3l4 4-9 9H8v-4z',wspark:'M20 15.5a2 2 0 0 1-2 2H8.5L4 21V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2zM12 7.2l1.15 2.65L15.8 11l-2.65 1.15L12 14.8l-1.15-2.65L8.2 11l2.65-1.15z'});
+function wSeed(){const A=a(),W=sw();const mk=(id,grp,q,k)=>({id,grp,pin:false,msgs:[{me:1,t:q},{h:A[k].t,s:A[k].s||(W?'Maudhui yaliyoidhinishwa na WAJIBU':'WAJIBU-approved content')}]});
+ return [mk('t1','week',W?'Halmashauri inapata pesa wapi?':'Where does the council get its money?','rev'),mk('t2','week',W?'Zabuni za halmashauri zinatolewaje?':'How are council tenders given?','proc')]}
+function w0(){return {scr:'site',threads:wSeed(),cur:null,n:3,busy:false,drawer:false,menu:false,confirm:null,att:null,cap:null,pick:'road',viewer:null,rec:null,v:{ph:'idle',cap:'',who:'',subs:true,muted:false},spk:null,lite:false,fz:0,cn:'Kilosa DC',draft:'',used:{}}}
+function W0(){if(!S.web)S.web=w0();return S.web}
+function wCur(){const Wb=W0();let t=Wb.threads.find(x=>x.id===Wb.cur);if(!t){t={id:'t'+(Wb.n++),grp:'today',pin:false,msgs:[]};Wb.threads.unshift(t);Wb.cur=t.id}return t}
+function wT(){return sw()?{
+  url:'wajibu.or.tz',mf:'mfano',nav:['Mada','Bajeti','CAG','Njia nyingine'],lite:'Toleo jepesi',fz:'Ukubwa wa herufi',
+  h1:'Fahamu jinsi pesa za umma zinavyotumika',lead:'Taarifa rahisi kuhusu bajeti za halmashauri, kodi, ripoti za CAG na rushwa. Zote zimeidhinishwa na WAJIBU.',
+  open:'Uliza Wajibika AI',openS:'Majibu ya haraka kwa maandishi, sauti au picha',fab:'Uliza AI',
+  sugg:['Bajeti ya Kilosa 2026/27 ikoje?','Hati ya CAG ina maana gani?','Nitaripotije rushwa?','Halmashauri inapata pesa wapi?'],
+  tT:'Mada',tS:'Soma kwa ufupi, au muulize AI kwa undani.',more:'Muulize AI',
+  topics:[['chart','Bajeti ya halmashauri','Halmashauri hupanga pesa kila mwaka kwa mishahara, miradi na matumizi mengine.','Bajeti ya halmashauri ikoje?'],['dl','Mapato na kodi','Pesa hutoka serikali kuu na kwenye ushuru na ada za halmashauri.','Halmashauri inapata pesa wapi?'],['book','Ripoti za CAG','CAG hukagua hesabu kila mwaka na kutoa hati.','Hati ya CAG ina maana gani?'],['doc','Manunuzi ya umma','Zabuni hutangazwa wazi na mshindi huchaguliwa kwa vigezo.','Zabuni za halmashauri zinatolewaje?'],['flag','Kuripoti rushwa','Piga TAKUKURU 113 bure, au tembelea ofisi zao.','Nitaripotije rushwa?'],['users','Shiriki maamuzi','Mikutano ya kijiji na kata hujadili mpango wa bajeti.','Ninashiriki vipi kwenye mpango wa bajeti?']],
+  bT:'Bajeti ya miradi kwa halmashauri',bS:'Pesa za miradi ya maendeleo mwaka 2025/26, kwa shilingi.',cn:'Halmashauri',tot:'Jumla ya pesa za miradi',sec:['Elimu','Afya','Maji','Barabara'],bAsk:'Muulize AI kuhusu bajeti hii',bQ:c=>`Bajeti ya miradi ya ${c} ikoje?`,
+  cT:'Ripoti za CAG 2024/25',cS:'Kila mwaka CAG hukagua hesabu za taasisi za umma na kutoa hati.',c1:'Ripoti zilizokaguliwa',c2:'Zilipata hati safi',c3:'karibu 99 kati ya kila 100',
+  hati:[['ok','Hati inayoridhisha','Hesabu ziko sawa.'],['wa','Hati yenye shaka','Kuna makosa kwenye baadhi ya hesabu.'],['er','Hati isiyoridhisha','Kuna makosa makubwa.'],['er','Hati mbaya','CAG hakupata taarifa za kutosha.']],
+  cSrc:'Chanzo: Ripoti Kuu za CAG 2024/25, NAOT (Aprili 2026)',
+  fT:'Pata Wajibika Kidigitali popote',fW:'WhatsApp',fWs:'Chati na AI',fU:'USSD',fS:'SMS',fSs:'Tuma swali',fV:'Simu ya sauti',fVs:'Bure, majibu yaliyorekodiwa',
+  foot:'Majibu yote yanatoka kwenye taarifa zilizoidhinishwa na WAJIBU. Takwimu za bajeti ni za mfano.',priv:'Hatuhifadhi jina lako. Maswali yanahifadhiwa bila kukutambulisha ili kuboresha majibu.',
+  liteOn:'Toleo jepesi limewashwa: picha na mapambo yamezimwa ili ukurasa ufunguke haraka.',
+  ai:'Wajibika AI',aiSub:'Pesa za umma kwa maneno rahisi',back:'Rudi kwenye tovuti',hello:'Karibu! Ungependa kujua nini kuhusu pesa za umma leo?',
+  ph:'Uliza Wajibika AI',attPh:'Ongeza maelezo ya picha…',disc:'Majibu yanatoka kwenye taarifa zilizoidhinishwa na WAJIBU.',hist:'Historia',
+  src:'Chanzo',copy:'Nakili',copied:'Jibu limenakiliwa.',good:'Jibu zuri',bad:'Jibu baya',fbOk:'Asante kwa maoni yako.',retry:'Jibu tena',listen:'Sikiliza',stop:'Simamisha',
+  newChat:'Mazungumzo mapya',pinned:'Yaliyobandikwa',today:'Leo',week:'Wiki iliyopita',delOne:'Futa',delAll:'Futa historia yote',pinIt:'Bandika',unpinIt:'Ondoa kibandiko',delChat:'Futa mazungumzo',
+  delT1:'Futa mazungumzo haya?',delB1:'Hutaweza kuyarudisha.',delTA:'Futa historia yote?',delBA:'Mazungumzo yote yatafutwa kwenye kifaa hiki.',cancel:'Ghairi',delYes:'Futa',deleted:'Imefutwa.',pinnedT:'Yamebandikwa juu.',unpinnedT:'Kibandiko kimeondolewa.',
+  topicsD:'Mada',settings:'Mipangilio',also:'Pia kwenye WhatsApp, USSD *123*08# na simu 12308',
+  camT:'Piga picha',retake:'Piga tena',use:'Tumia picha',gal:'Picha za mfano',photo:'Picha',photoQ:'Picha hii inaonyesha nini?',
+  rec:'Inarekodi… ongea sasa',recHint:'Ongea, kisha bonyeza tuma',vnote:'Ujumbe wa sauti',vTitle:'Ongea na Wajibika AI',
+  vIdle:'Gusa duara kuanza kuongea',vListen:'Ninakusikiliza…',vThink:'Natafuta jibu…',vSpeak:'Ninajibu…',vMuted:'Kipaza sauti kimezimwa',vDemo:'Mfano: "Hati ya CAG ina maana gani?"',vEnd:'Maliza',vMute:'Zima sauti',ccOn:'Onyesha maandishi',ccOff:'Ficha maandishi',
+  demoQ:['Hati ya CAG ina maana gani?','Nitaripotije rushwa?','Halmashauri inapata pesa wapi?'],noVoice:'Sauti haipatikani hapa.'
+ }:{
+  url:'wajibu.or.tz',mf:'sample',nav:['Topics','Budgets','CAG','Other channels'],lite:'Light version',fz:'Text size',
+  h1:'Understand how public money is used',lead:'Simple information on council budgets, taxes, CAG reports and corruption. All approved by WAJIBU.',
+  open:'Ask Wajibika AI',openS:'Quick answers by text, voice or photo',fab:'Ask AI',
+  sugg:['What is the Kilosa budget for 2026/27?','What does a CAG opinion mean?','How do I report corruption?','Where does the council get its money?'],
+  tT:'Topics',tS:'Read a short summary, or ask the AI for more.',more:'Ask the AI',
+  topics:[['chart','Council budget','Each year the council plans money for salaries, projects and other costs.','What is the council budget?'],['dl','Revenue and taxes','Money comes from central government and from council levies and fees.','Where does the council get its money?'],['book','CAG reports','The CAG audits the accounts every year and gives an opinion.','What does a CAG opinion mean?'],['doc','Public procurement','Tenders are advertised openly and the winner is chosen by set rules.','How are council tenders given?'],['flag','Report corruption','Call PCCB on 113 for free, or visit their office.','How do I report corruption?'],['users','Take part','Village and ward meetings discuss the budget plan.','How can I take part in the budget plan?']],
+  bT:'Project budget by council',bS:'Money for development projects in 2025/26, in shillings.',cn:'Council',tot:'Total money for projects',sec:['Education','Health','Water','Roads'],bAsk:'Ask the AI about this budget',bQ:c=>`What is the project budget of ${c}?`,
+  cT:'CAG reports 2024/25',cS:'Every year the CAG audits the accounts of public bodies and gives an opinion.',c1:'Reports audited',c2:'Got a clean opinion',c3:'about 99 in every 100',
+  hati:[['ok','Clean (unqualified)','The accounts are fine.'],['wa','Qualified','Some accounts have errors.'],['er','Adverse','There are serious errors.'],['er','Disclaimer','The CAG could not get enough information.']],
+  cSrc:'Source: CAG General Reports 2024/25, NAOT (April 2026)',
+  fT:'Get Wajibika Kidigitali anywhere',fW:'WhatsApp',fWs:'Chat with the AI',fU:'USSD',fS:'SMS',fSs:'Send a question',fV:'Voice call',fVs:'Free, recorded answers',
+  foot:'All answers come from information approved by WAJIBU. Budget figures are sample data.',priv:'We do not keep your name. Questions are kept without identifying you, to improve the answers.',
+  liteOn:'Light version is on: pictures and effects are off so the page opens fast.',
+  ai:'Wajibika AI',aiSub:'Public money in simple words',back:'Back to the website',hello:'Welcome! What would you like to know about public money today?',
+  ph:'Ask Wajibika AI',attPh:'Add a note about the photo…',disc:'Answers come from information approved by WAJIBU.',hist:'History',
+  src:'Source',copy:'Copy',copied:'Answer copied.',good:'Good answer',bad:'Bad answer',fbOk:'Thank you for your feedback.',retry:'Answer again',listen:'Listen',stop:'Stop',
+  newChat:'New chat',pinned:'Pinned',today:'Today',week:'Last week',delOne:'Delete',delAll:'Delete all history',pinIt:'Pin',unpinIt:'Unpin',delChat:'Delete chat',
+  delT1:'Delete this chat?',delB1:'You will not be able to get it back.',delTA:'Delete all history?',delBA:'All chats on this device will be deleted.',cancel:'Cancel',delYes:'Delete',deleted:'Deleted.',pinnedT:'Pinned to the top.',unpinnedT:'Unpinned.',
+  topicsD:'Topics',settings:'Settings',also:'Also on WhatsApp, USSD *123*08# and call 12308',
+  camT:'Take a photo',retake:'Retake',use:'Use photo',gal:'Sample photos',photo:'Photo',photoQ:'What does this photo show?',
+  rec:'Recording… speak now',recHint:'Speak, then press send',vnote:'Voice note',vTitle:'Talk to Wajibika AI',
+  vIdle:'Tap the circle to start talking',vListen:'Listening…',vThink:'Finding the answer…',vSpeak:'Answering…',vMuted:'Microphone is off',vDemo:'Example: "What does a CAG opinion mean?"',vEnd:'End',vMute:'Mute',ccOn:'Show captions',ccOff:'Hide captions',
+  demoQ:['What does a CAG opinion mean?','How do I report corruption?','Where does the council get its money?'],noVoice:'Voice is not available here.'
+ }}
+const wSleep=ms=>new Promise(r=>setTimeout(r,ms));
+/* ---- answer engine (shared rules with WhatsApp) ---- */
+async function webAnswer(text){const q=text.toLowerCase(),A=a(),W=sw(),src=W?'Maudhui yaliyoidhinishwa na WAJIBU':'WAJIBU-approved content',chips=b=>(b||[]).filter(x=>x&&x[0]==='reply'&&String(x[2]).startsWith('q:')).map(x=>x[1]);
+ const c=S.custom.find(x=>norm(x.q)===norm(text));if(c){await wSleep(600);return {h:esc(c.a).replace(/\n/g,'<br>'),s:W?'Jibu lililoidhinishwa na WAJIBU':'Answer approved by WAJIBU'}}
+ for(const [k,r] of GUARD){if(r.test(q)){S.oos++;if(k!=='emerg')S.oosQ.unshift({q:text,k,t:Date.now()});const x=A[k]||A.oos;await wSleep(600);return {h:x.t,ch:chips(x.b)}}}
+ let it='unsure';for(const [k,r] of RX){if(r.test(q)){it=k;break}}
+ {const ok=x=>x!=='Kilosa DC'||/(miradi|project)/.test(q);const m=FPC.find(x=>ok(x)&&q.includes(x.toLowerCase()))||FPC.find(x=>ok(x)&&q.includes(x.split(' ')[0].toLowerCase()));
+  if(m&&/(miradi|project|bajeti|budget|pesa|money)/.test(q)){const b=FPB[m],L=W?'sw':'en',T=wT(),mx=Math.max(...b);await wSleep(700);
+   return {h:(W?`Pesa za miradi ya maendeleo ya <b>${m}</b> mwaka 2025/26 (mfano):`:`Money for development projects of <b>${m}</b> in 2025/26 (sample):`)+`<div class="wcard">${b.map((v,i)=>`<div class="wcr"><span>${T.sec[i]}</span><div class="wbt"><i style="width:${Math.round(v/mx*100)}%"></i></div><b>${money(v,L,1)}</b></div>`).join('')}<div class="wctot">${T.tot}: <b>${money(b.reduce((x,y)=>x+y,0),L)}</b></div></div>`,s:W?'Bajeti ya miradi · takwimu za mfano':'Project budget · sample data'}}}
+ if(SAMPLE&&it!=='hello'){
+  const prompt=`You are "Wajibika AI", the assistant on the Wajibika Kidigitali website of WAJIBU – Institute of Public Accountability (Tanzania). You help ordinary citizens understand public money: council budgets, revenue, taxes, CAG audit reports, public procurement, reporting corruption, and how to take part in local decisions.
+RULES
+1. Answer ONLY from the KNOWLEDGE below. Never invent numbers, names, dates or phone numbers.
+2. If the topic is about public money but KNOWLEDGE has no answer, use type "handover": say briefly you do not have approved information on that yet and the question has been saved so WAJIBU can add an approved answer; name one or two topics you CAN help with. Never offer to connect to a person, officer or staff, and never promise a call-back.
+3. Outside your topics (weather, sport, love, health, homework, entertainment): type "out_of_scope", say politely you can't help, and in one line what you can help with.
+4. No political opinions. Emergencies: tell them to contact the police or emergency services. Never share private information.
+5. Reply ONLY in ${W?'Kiswahili':'English'}. Never mix languages. Very simple words, short sentences, at most about 90 words, at most 4 short points (one per line starting with "• "). You may use **bold**. No headings, no links. Write money in plain words, never "TZS", "bn" or decimals: Kiswahili "shilingi bilioni 61 na milioni 200", English "61 billion 200 million shillings".
+6. "source" = the source label in square brackets of the KNOWLEDGE item used (after "·"), or "".
+KNOWLEDGE
+${kbText()}
+RECENT CHAT
+${wCur().msgs.slice(-6).map(m=>(m.me?'Citizen: '+m.t:'Assistant: '+plain(m.h).slice(0,300))).join('\n')}
+QUESTION
+"""${text}"""
+Reply with JSON only: {"type":"answer"|"handover"|"out_of_scope","text":"...","source":"..."}`;
+  let r=null;try{r=await SAMPLE.json(prompt,{cache:false});if(typeof r==='string')r=JSON.parse(r)}catch(e){try{const x=await SAMPLE(prompt,{cache:false});const m=(x.text||'').match(/\{[\s\S]*\}/);r=m?JSON.parse(m[0]):null}catch(_){r=null}}
+  if(r&&r.text){const h=aiFmt(r.text);if(r.type==='out_of_scope'){S.oos++;S.oosQ.unshift({q:text,k:'oos',t:Date.now()});return {h}}if(r.type==='handover'){gap(text);return {h}}return {h,s:r.source||src}}}
+ let key=it;if(it==='bud')key=bud()?'budOk':'budNo';else if(['menu','stop','start','human'].includes(it))key='unsure';
+ if(key==='unsure'||key==='budNo'||key==='myhati')gap(text);
+ const x=A[key]||A.unsure;await wSleep(800);return {h:x.t,s:key==='unsure'||key==='budNo'||key==='hello'?'':(x.s||src),ch:chips(x.b)}}
+async function photoText(src,cap){let txt=null;
+  try{if(SAMPLE&&SAMPLE.limits){const lm=await SAMPLE.limits();if(lm&&lm.images){const blob=await (await fetch(src)).blob();
+   const prompt=`You are "Wajibika AI" of WAJIBU (Tanzania) that helps citizens follow public money. A citizen sent this photo${cap?` with the note: """${cap}"""`:''}.
+1. In one short sentence say what the photo shows that matters for public money (unfinished road, health facility, school, notice board, receipt). If there is readable text, report key words or numbers exactly.
+2. Give 2-3 short, practical steps (ask the ward/council office, attend the public meeting, compare with the budget, report corruption to PCCB (TAKUKURU) on 113 for free) — only what fits.
+3. Use facts only from KNOWLEDGE; never invent amounts, names or dates. Never offer to connect them to a person. Say the photo was saved so WAJIBU can follow it up.
+4. If the photo is not about public services or money, say politely what you can help with.
+Reply ONLY in ${sw()?'Kiswahili':'English'}, very simple words, at most 90 words, numbered steps, **bold** for key words.
+KNOWLEDGE
+${kbText()}
+Reply with JSON only: {"text":"..."}`;
+   let r=await SAMPLE.json(prompt,{images:[blob],cache:false});if(typeof r==='string')r=JSON.parse(r);if(r&&r.text)txt=r.text}}}catch(_){txt=null}
+  if(!txt){await wSleep(900);txt=photoCanned(src)}return txt}
+/* ---- chat flow ---- */
+function wScroll(){const e=$('#wscroll');if(e)e.scrollTop=e.scrollHeight}
+async function webAsk(text,o){const Wb=W0();o=o||{};text=String(text||'').trim();if((!text&&!o.img)||Wb.busy)return;
+ const th=wCur();th.msgs.push({me:1,t:text,img:o.img||null,vn:o.vn||null});Wb.busy=true;Wb.draft='';Wb.att=null;draw();wScroll();
+ let r;if(o.img){const txt=await photoText(o.img,text);r={h:aiFmt(txt),s:sw()?'Picha imehifadhiwa kwa ufuatiliaji wa WAJIBU':'Photo saved for WAJIBU follow-up'}}else r=await webAnswer(text);
+ Wb.busy=false;if(o.vn){r.voice=1;r.dur=fmtDur(estMs(plain(r.h)))}th.msgs.push(r);if(Wb.scr==='voice')return r;draw();wScroll();if(o.vn)wSpeak(th.msgs.length-1);return r}
+function wSpeak(i){const Wb=W0(),m=wCur().msgs[i];if(!m)return;if(Wb.spk===i){wStopSpk();return draw()}wStopSpk();Wb.spk=i;draw();
+ if(m.me){const p=String(m.vn||'0:05').split(':');Wb._st=setTimeout(()=>{if(Wb.spk===i){Wb.spk=null;draw()}},((+p[0])*60+(+p[1]||5))*1000);return}
+ const txt=plain(m.h);if(TTS){TTS.speak(txt.slice(0,1900)).catch(()=>{Wb.spk=null;draw()})}else{Wb._st=setTimeout(()=>{if(Wb.spk===i){Wb.spk=null;draw()}},estMs(txt))}}
+function wStopSpk(){const Wb=W0();clearTimeout(Wb._st);if(Wb.spk!=null&&TTS){try{TTS.stop()}catch(_){}}Wb.spk=null}
+/* ---- recording (voice note + voice mode) ---- */
+function wRecStart(mode){const Wb=W0();wStopSpk();Wb.rec={mode,t0:Date.now(),fin:'',part:'',nodict:!DICT};if(DICT){try{DICT.start().catch(()=>{if(Wb.rec)Wb.rec.nodict=true})}catch(_){Wb.rec.nodict=true}}
+ clearInterval(Wb._ri);Wb._ri=setInterval(()=>{const e=$('#wrt');if(e&&Wb.rec)e.textContent=fmtDur(Date.now()-Wb.rec.t0)},500)}
+async function wRecStop(){const Wb=W0(),r=Wb.rec;if(!r)return '';clearInterval(Wb._ri);if(DICT&&!r.nodict){try{await DICT.stop()}catch(_){}await wSleep(500)}
+ Wb.rec=null;let txt=((r.fin||'')+' '+(r.part||'')).trim();if(!txt&&r.nodict){const d=wT().demoQ;txt=d[(Wb.vi=(Wb.vi||0)+1)%d.length]}return {txt,dur:fmtDur(Date.now()-r.t0)}}
+function wUpRec(){const Wb=W0(),r=Wb.rec;if(!r)return;const t=((r.fin||'')+' '+(r.part||'')).trim();const e=$('#wrlive');if(e)e.textContent=t||wT().recHint;const v=$('#wvcap');if(v&&Wb.v.subs)v.textContent=t||'…'}
+async function wVoiceTurn(){const Wb=W0(),V=Wb.v,T=wT();
+ if(V.muted)return;
+ if(V.ph==='idle'||V.ph==='speak'){wStopSpk();V.ph='listen';V.who='me';V.cap='';wRecStart('v');draw();if(!DICT){setTimeout(()=>{if(Wb.scr==='voice'&&V.ph==='listen'){V.cap=T.demoQ[((Wb.vi||0)+1)%T.demoQ.length];draw()}},700);setTimeout(()=>{if(Wb.scr==='voice'&&V.ph==='listen')wVoiceTurn()},2600)}return}
+ if(V.ph==='listen'){const {txt}=await wRecStop();if(!txt){V.ph='idle';V.cap='';draw();return toast(sw()?'Sikusikia vizuri. Jaribu tena.':'I could not hear you. Try again.','err')}
+  V.ph='think';V.who='me';V.cap=txt;draw();const r=await webAsk(txt);if(Wb.scr!=='voice')return;const say=plain(r.h);
+  V.ph='speak';V.who='ai';V.cap=say;draw();Wb.vspk=true;
+  if(TTS){TTS.speak(say.slice(0,1900)).catch(()=>{V.ph='idle';draw()})}else setTimeout(()=>{if(Wb.scr==='voice'&&V.ph==='speak'){V.ph='idle';draw()}},Math.min(9000,estMs(say)))}}
+/* ---- render: website ---- */
+function wsT(){return sw()?{
+ nav:['Mwanzo','Kuhusu sisi','Tulivyo','Tunachofanya','Kituo cha machapisho','Habari','Fursa','Toa taarifa','Wasiliana nasi'],donate:'Changia',more:'Soma zaidi',
+ hero:'Jamii inayowajibika, ambapo utawala bora ni sehemu ya maisha na jukumu la kila mmoja',
+ abT:'Kuhusu sisi',ab:'WAJIBU – Taasisi ya Uwajibikaji wa Umma ni taasisi ya fikra iliyoanzishwa mwaka 2015. Lengo lake ni kujenga mazingira yanayokuza uwajibikaji wa fedha za umma na utawala bora Tanzania.',abL:'Soma zaidi kuhusu sisi →',
+ wdT:'Tunachofanya',wdS:'Kuchochea mabadiliko ya sera na uwajibikaji',wd:'Mpango Mkakati wa WAJIBU unaendeleza uwajibikaji wa fedha za umma kupitia utafiti, utetezi na ushirikishwaji wa wananchi.',wdL:'Jifunze zaidi →',
+ imT:'Matokeo',im:'Tangu 2015, WAJIBU imefanya kazi na wananchi, vijana, maafisa wa serikali, kamati za Bunge, madiwani na vyombo vya habari.',
+ stats:[['users','Vijana','10,000+','#14a3e6'],['mega','Waandishi wa habari','45+','#f2711c'],['globe','Asasi za kiraia','100+','#21a366'],['doc','Wenye dhamana','145+','#f59e0b'],['book','Wawakilishi','100','#2563eb'],['info','Madiwani','156','#14b8a6']],
+ faT:'Maeneo yetu',fa:'Tunaweka nguvu kwenye maeneo muhimu kwa maendeleo ya Tanzania.',
+ areas:[['shield','Utawala bora wa fedha na kupambana na rushwa','Uwazi, uadilifu wa fedha na usimamizi wa wananchi.'],['chart','Biashara ya haki kwa ukuaji wa uchumi','Mifumo ya biashara na kodi iliyo wazi na ya haki.'],['doc','Manunuzi endelevu ya umma','Ufuatiliaji na usimamizi wa wananchi kwenye manunuzi ya umma.'],['users','Kuimarisha taasisi','Uendelevu na ushawishi wa kikanda.']],
+ nwT:'Habari na matukio',nw:'Habari, tafiti na matukio ya karibuni kutoka WAJIBU.',
+ news:[['14/11/2026','Wito kwa washauri: Wajibika Kidigitali – jukwaa la AI, chatbot ya WhatsApp na kanzidata ya jamii','WAJIBU, kwa kushirikiana na Policy Forum, inakaribisha kampuni na washauri kubuni na kujenga Wajibika Kidigitali.'],['09/11/2026','Jinsi redio za jamii zinavyoibua kero za wananchi | Amka Tuongee','Waandishi 23 wa redio za jamii wamepewa ujuzi wa kuchambua ripoti za CAG na kuhoji viongozi.'],['02/11/2026','Kuimarisha ushiriki wa wafanyabiashara wadogo kupitia mfumo wa NeST','Wajasiriamali 447 walipata mafunzo, na 38 kati ya 60 walioomba zabuni walishinda.']],
+ art:'MAKALA',read:'Soma makala yote →',
+ siT:'Pata taarifa',si:'Pokea habari na taarifa mpya za WAJIBU kwenye barua pepe yako.',email:'Barua pepe yako',sub:'Jiunge',subOk:'Asante! Umejiunga na jarida la WAJIBU (mfano).',
+ addr:'Rose Garden Road, Mtaa wa Tancom 10, Mikocheni, Dar es Salaam',demo:'Hii ni sehemu ya mfano wa tovuti.',
+ fab:'Uliza Wajibika AI',fabS:'Msaidizi wa AI',menuAI:'Wajibika AI',
+ wkT:'Wajibika Kidigitali',wkS:'Elewa pesa za umma kwa simu yoyote, hata bila intaneti.',
+ ch:[['wspark','Tovuti hii','Uliza Wajibika AI kwa maandishi, sauti au picha','ai'],['chat','WhatsApp','Chati na AI kwenye WhatsApp','wa'],['list','USSD *123*08#','Piga kwenye simu ya kitochi, chagua mada kwa namba. Bila intaneti.','fp'],['send','SMS 12308','Tuma swali kwa ujumbe mfupi, jibu linarudi kwa SMS.','fp'],['phone','Piga 12308','Bure. Sikiliza majibu yaliyorekodiwa kwa Kiswahili.','fp']],
+ howT:'Kwa simu ya kitochi',how:['Piga *123*08# kisha bonyeza simu','Chagua 1 Bajeti, 2 CAG, 3 Uliza swali','Jibu linakuja kwenye skrini na kwa SMS'],free:'Huduma zote ni bure kwa mwananchi.'
+}:{
+ nav:['Home','About Us','Who We Are','What We Do','Resource Center','News','Opportunities','Report Concern','Contact Us'],donate:'Donate',more:'Learn More',
+ hero:'An accountable society where good governance is a way of life and a collective responsibility',
+ abT:'About Us',ab:'WAJIBU – Institute of Public Accountability is a think-tank established in 2015. It exists to foster an environment that promotes public financial accountability and good governance in Tanzania.',abL:'Read more about us →',
+ wdT:'What We Do',wdS:'Driving Policy Change & Accountability',wd:'WAJIBU’s Strategic Plan advances public financial accountability through research, advocacy and citizen engagement.',wdL:'Learn more about what we do →',
+ imT:'Impact',im:'Since 2015, WAJIBU has worked with citizens, youth, government officials, parliamentary committees, councillors and the media.',
+ stats:[['users','Youth','10,000+','#14a3e6'],['mega','Media / journalists','45+','#f2711c'],['globe','Sub-national NGOs','100+','#21a366'],['doc','Duty bearers','145+','#f59e0b'],['book','Elected representatives','100','#2563eb'],['info','Councillors','156','#14b8a6']],
+ faT:'Our Focus Areas',fa:'We concentrate our efforts on key areas critical to Tanzania’s progress.',
+ areas:[['shield','Good financial governance and anti-corruption','Transparency, fiscal integrity and citizen oversight.'],['chart','Equitable trade for economic growth','Fair, transparent and inclusive trade and tax systems.'],['doc','Sustainable public procurement','Monitoring and citizen oversight in public procurement.'],['users','Organisational development','Institutional resilience and regional influence.']],
+ nwT:'News & Updates',nw:'The latest news, research findings and event highlights from WAJIBU.',
+ news:[['11/14/2026','Call for Consultants: Wajibika Kidigitali AI Platform, WhatsApp Chatbot and Community Mobile Database','WAJIBU, with Policy Forum, invites firms and consultants to design and build Wajibika Kidigitali.'],['11/9/2026','How local radio brings community concerns to light | Amka Tuongee','23 community radio journalists gained skills to analyse CAG reports and question public officials.'],['11/2/2026','Strengthening small business participation through NeST','447 entrepreneurs were trained, and 38 of the 60 who bid for tenders won.']],
+ art:'ARTICLE',read:'Read Full Article →',
+ siT:'Stay Informed',si:'Get the latest insights and updates from WAJIBU in your inbox.',email:'Your email',sub:'Subscribe',subOk:'Thank you! You joined the WAJIBU newsletter (sample).',
+ addr:'Rose Garden Road, 10 Tancom Street, Mikocheni, Dar es Salaam',demo:'This part of the website is a sample.',
+ fab:'Ask Wajibika AI',fabS:'AI assistant',menuAI:'Wajibika AI',
+ wkT:'Wajibika Kidigitali',wkS:'Understand public money on any phone, even without internet.',
+ ch:[['wspark','This website','Ask Wajibika AI by text, voice or photo','ai'],['chat','WhatsApp','Chat with the AI on WhatsApp','wa'],['list','USSD *123*08#','Dial on a feature phone and choose a topic by number. No internet needed.','fp'],['send','SMS 12308','Send a question by text message and get the answer by SMS.','fp'],['phone','Call 12308','Free. Listen to recorded answers in Kiswahili.','fp']],
+ howT:'On a feature phone',how:['Dial *123*08# and press call','Choose 1 Budget, 2 CAG, 3 Ask a question','The answer shows on screen and comes by SMS'],free:'All services are free for citizens.'
+}}
+function webSite(){const T=wsT(),Wb=W0();
+ const logo=`<span class="wjlogo" aria-label="WAJIBU"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18.5" fill="#fff" stroke="#2fa84f" stroke-width="2"/><circle cx="12.5" cy="15" r="3" fill="#f2711c"/><circle cx="20" cy="12" r="3" fill="#176FD3"/><circle cx="27.5" cy="15" r="3" fill="#2fa84f"/><path d="M7.5 27c0-4 2.3-7 5-7s5 3 5 7zM15 25c0-4.5 2.3-8 5-8s5 3.5 5 8zM22.5 27c0-4 2.3-7 5-7s5 3 5 7z" fill="#1b2a4a" opacity=".9"/><path d="M9 30.5h22" stroke="#2fa84f" stroke-width="2" stroke-linecap="round"/></svg><span class="wjwm"><b>WAJIBU</b><small>Institute of Public Accountability</small></span></span>`;
+ return `<div class="wsite wj" id="wsite">
+ <div class="wjh">${logo}<span class="wjsp"></span><button class="wjdon" data-w="demo">${T.donate}</button><button class="wjham" data-w="nav" aria-label="Menu" aria-expanded="${!!Wb.nav}">${ic(Wb.nav?'x':'menu',22)}</button></div>
+ ${Wb.nav?`<div class="wjnav">${T.nav.map((n,i)=>`<button data-w="${i===0?'top':'demo'}"${i===0?' class="on"':''}>${n}${i&&i<7?ic('wchev',14):''}</button>`).join('')}<button class="wjnai" data-w="wk">${ic('phone',16)} ${sw()?'Wajibika Kidigitali kwa simu':'Wajibika Kidigitali by phone'}</button><button class="wjnai" data-w="ai">${ic('wspark',16)} ${T.menuAI}</button></div>`:''}
+ <section class="wjhero" style="background-image:linear-gradient(180deg,rgba(10,18,32,.55),rgba(10,18,32,.72)),url(${DEMOPICS.board})"><h1>${T.hero}</h1><div class="wjbtns"><button class="wjb" data-w="demo">${T.donate}</button><button class="wjb" data-w="demo">${T.more}</button></div></section>
+ <section class="wjs wjabout"><h2>${T.abT}</h2><p>${T.ab}</p><button class="wjl" data-w="demo">${T.abL}</button></section>
+ <section class="wjs"><h2>${T.wdT}</h2><h3>${T.wdS}</h3><p>${T.wd}</p><button class="wjl" data-w="demo">${T.wdL}</button></section>
+ <section class="wjs wjwk" id="wjwk"><span class="wjtag">${ic('wspark',14)} ${T.wkT}</span><h2>${T.wkS}</h2>
+  <div class="wjch">${T.ch.map(([i,t,d,k])=>`<button data-w="${k==='ai'?'ai':k==='wa'?'gowa':'gofp'}"><span>${ic(i,20)}</span><span><b>${t}</b><small>${d}</small></span>${ic('wchev',16)}</button>`).join('')}</div>
+  <div class="wjhow"><b>${ic('list',16)} ${T.howT}</b><ol>${T.how.map(x=>`<li>${x}</li>`).join('')}</ol><small>${T.free}</small></div></section>
+ <section class="wjs wjimp"><h2>${T.imT}</h2><p>${T.im}</p><div class="wjst">${T.stats.map(([i,l,n,c])=>`<div style="background:${c}">${ic(i,24)}<b>${l}</b><span>${n}</span></div>`).join('')}</div></section>
+ <section class="wjs wjfa"><h2>${T.faT}</h2><p>${T.fa}</p><div class="wjar">${T.areas.map(([i,t,d])=>`<div><span>${ic(i,20)}</span><b>${t}</b><small>${d}</small></div>`).join('')}</div></section>
+ <section class="wjs wjnews"><h2>${T.nwT}</h2><p>${T.nw}</p>${T.news.map(([d,t,x],i)=>`<article><small>${T.art} | ${d}</small><b>${t}</b><p>${x}</p><button class="wjl" data-w="${i===0?'ai':'demo'}">${T.read}</button></article>`).join('')}</section>
+ <section class="wjs wjsub"><h2>${T.siT}</h2><p>${T.si}</p><div class="wjform"><input class="inp" type="email" placeholder="${T.email}" aria-label="${T.email}"><button class="wjb" data-w="subok">${T.sub}</button></div></section>
+ <footer class="wjf">${logo}<small>${T.addr}</small><small>© 2026 WAJIBU</small></footer>
+ </div><button class="wjfab" data-w="ai"><span>${ic('wspark',20)}</span><span><small>${T.fabS}</small><b>${T.fab}</b></span></button>`}
+
+/* ---- render: AI app ---- */
+function wMsg(m,i,last){const T=wT(),Wb=W0();
+ const vb=(dur,me)=>{const p=String(dur||'0:05').split(':'),D=(+p[0])*60+(+p[1]||5);return `<div class="wvbub${me?' me':''}${Wb.spk===i?' on':''}" style="--d:${D}s"><button class="wplay" data-w="spk:${i}" aria-label="${Wb.spk===i?T.stop:T.listen}">${ic(Wb.spk===i?'pause':'play',18)}</button><div class="wwave">${Array.from({length:26},(_,j)=>`<i style="height:${[30,55,80,45,95,60,35,70,100,50,40,85,65,30,75,90,45,60,35,80,55,95,40,65,50,30][j]}%;animation-delay:${(j/26*D).toFixed(2)}s"></i>`).join('')}</div><span>${dur}</span></div>`};
+ if(m.me)return `<div class="wme">${m.img?`<button class="wimg" data-w="view:${i}"><img src="${m.img}" alt="${T.photo}"></button>`:''}${m.vn?vb(m.vn,1)+(m.t?`<small class="wvt">“${esc(m.t)}”</small>`:''):(m.t?`<span>${m.t.length>320&&!m.open?esc(m.t.slice(0,300).trim())+'…':esc(m.t)}${m.t.length>320?`<button class="wmore" data-w="more:${i}">${m.open?(sw()?'Onyesha kidogo':'Show less'):(sw()?'Soma zaidi':'Read more')}</button>`:''}</span>`:'')}</div>`;
+ return `<div class="wai"><div class="wab">${m.voice?vb(m.dur,0)+`<button class="wtxt" data-w="tx:${i}">${ic('doc',14)} ${m.tx?(sw()?'Ficha maandishi':'Hide text'):(sw()?'Soma maandishi':'Read the text')}</button>`:''}${!m.voice||m.tx?`<div class="wtx">${m.h}</div>`:''}${m.s?`<div class="wsrc">${T.src}: ${esc(m.s)}</div>`:''}
+  ${m.ch&&m.ch.length?`<div class="wsug wch2">${m.ch.map(q=>`<button class="chip" data-w="q:${esc(q)}">${esc(q)}</button>`).join('')}</div>`:''}
+  <div class="wacts"><button data-w="cp:${i}" aria-label="${T.copy}" title="${T.copy}">${ic('copy',16)}</button>${m.voice?'':`<button data-w="spk:${i}" class="${Wb.spk===i?'on':''}" aria-label="${Wb.spk===i?T.stop:T.listen}" title="${Wb.spk===i?T.stop:T.listen}">${ic(Wb.spk===i?'pause':'spk',16)}</button>`}<button data-w="fb:${i}:1" class="${m.fb===1?'on':''}" aria-label="${T.good}" title="${T.good}">${ic('wthu',16)}</button><button data-w="fb:${i}:-1" class="${m.fb===-1?'on':''}" aria-label="${T.bad}" title="${T.bad}">${ic('wthd',16)}</button></div></div></div>`}
+function webAI(){const T=wT(),Wb=W0(),th=Wb.threads.find(x=>x.id===Wb.cur),msgs=th?th.msgs:[],empty=!msgs.length&&!Wb.busy;
+ const grp=g=>{const l=Wb.threads.filter(x=>x.msgs.length&&(g==='pin'?x.pin:(!x.pin&&x.grp===g)));return l.length?`<div class="wdg"><span class="lbl">${g==='pin'?T.pinned:T[g]}</span>${l.map(x=>`<div class="wthr${x.id===Wb.cur?' on':''}"><button data-w="open:${x.id}"><span>${esc((x.msgs.find(m=>m.me)||{}).t||T.photo)}</span></button><button class="wx" data-w="delask:${x.id}" aria-label="${T.delOne}">${ic('trash',15)}</button></div>`).join('')}</div>`:''};
+ const drawer=Wb.drawer?`<div class="wscrim" data-w="drawer-x"><aside class="wdrawer" data-stop="1"><div class="wdh"><b>${T.ai}</b><button class="wib" data-w="drawer-x" aria-label="${T.cancel}">${ic('x',20)}</button></div>
+   <button class="wnewrow" data-w="new"><i>${ic('wplus',18)}</i>${T.newChat}</button><div class="wdscroll">${grp('pin')}${grp('today')}${grp('week')}
+   ${Wb.threads.some(x=>x.msgs.length)?`<button class="wdelall" data-w="delall">${ic('trash',15)} ${T.delAll}</button>`:''}</div>
+   <div class="wdf"><button class="btn gray sm" data-w="site">${ic('back',15)} ${T.back}</button></div></aside></div>`:'';
+ const menu=Wb.menu?`<div class="wmscrim" data-w="menu-x"><div class="wpmenu" role="menu" data-stop="1"><button role="menuitem" data-w="pin"${th&&th.msgs.length?'':' disabled'}>${ic('pin',16)}${th&&th.pin?T.unpinIt:T.pinIt}</button><button role="menuitem" class="dng" data-w="delask:${Wb.cur}"${th&&th.msgs.length?'':' disabled'}>${ic('trash',16)}${T.delChat}</button></div></div>`:'';
+ const conf=Wb.confirm?`<div class="wsheet" data-w="del-no"><div class="wsbox" role="alertdialog" data-stop="1"><b>${Wb.confirm.kind==='all'?T.delTA:T.delT1}</b><p>${Wb.confirm.kind==='all'?T.delBA:T.delB1}</p><div class="wsrow"><button class="btn gray" data-w="del-no">${T.cancel}</button><button class="btn danger" data-w="del-yes">${T.delYes}</button></div></div></div>`:'';
+ const viewer=Wb.viewer?`<div class="wviewer" data-w="view-x"><img src="${Wb.viewer}" alt="${T.photo}"><button class="wib" data-w="view-x" aria-label="${T.cancel}">${ic('x',22)}</button></div>`:'';
+ const bars=Array.from({length:20},()=>'<i></i>').join('');
+ const comp=Wb.rec&&Wb.rec.mode==='n'?`<div class="wcomp"><div class="wrecbar"><button class="wib" data-w="rec-x" aria-label="${T.cancel}">${ic('trash',18)}</button><div class="wrp"><i class="wrdot"></i><b id="wrt">0:00</b><div class="wrw">${bars}</div></div><button class="wsend" data-w="rec-send" aria-label="${T.vnote}">${ic('send',18)}</button></div><div class="wdisc" id="wrlive">${T.recHint}</div></div>`
+  :`<div class="wcomp">${Wb.att?`<div class="watt"><img src="${Wb.att}" alt="${T.photo}"><button data-w="att-x" aria-label="${T.cancel}">${ic('x',14)}</button></div>`:''}<div class="wrow2"><div class="wpill2"><button class="wib" data-w="cam" aria-label="${T.camT}" title="${T.camT}">${ic('cam',20)}</button><textarea id="wq" rows="1" maxlength="1000" placeholder="${Wb.att?T.attPh:T.ph}" aria-label="${T.ph}">${esc(Wb.draft)}</textarea><small class="wcnt" id="wcnt"${Wb.draft.length>800?'':' hidden'}>${Wb.draft.length}/1000</small><button class="wib" data-w="rec" aria-label="${T.vnote}" title="${T.vnote}">${ic('mic',20)}</button></div>
+   <button class="wsend" id="wvb" data-w="voice" aria-label="${T.vTitle}" title="${T.vTitle}"${Wb.draft.trim()||Wb.att?' hidden':''}>${ic('wwave',20)}</button><button class="wsend" id="wsb" data-w="send" aria-label="${T.ph}"${Wb.draft.trim()||Wb.att?'':' hidden'}${Wb.busy?' disabled':''}>${ic('send',19)}</button></div><div class="wdisc">${T.disc}</div></div>`;
+ return `<div class="wapp"><div class="wchead"><button class="wib" data-w="site" aria-label="${T.back}">${ic('back',20)}</button><div class="wct"><b>${th&&th.msgs.length?esc(((th.msgs.find(m=>m.me)||{}).t||T.photo).slice(0,26)):T.ai}</b></div><button class="wib" data-w="drawer" aria-label="${T.hist}" title="${T.hist}">${ic('wmenu',20)}</button><button class="wib" data-w="new" aria-label="${T.newChat}" title="${T.newChat}">${ic('wplus',22)}</button></div>
+  <div class="wcbody" id="wscroll">${empty?`<div class="wwel"><div class="wlg">${ic('wspark',26)}</div><h2>${T.hello}</h2><div class="wsugv">${T.sugg.map((q,k)=>`<button data-w="q:${esc(q)}"><span>${ic(['chart','book','flag','dl'][k],17)}</span>${esc(q)}</button>`).join('')}</div></div>`
+   :`${msgs.map((m,i)=>wMsg(m,i,i===msgs.length-1&&!m.me)).join('')}${Wb.busy?`<div class="wai"><div class="wab wtyping"><span class="wav wspin">${ic('wspark',15)}</span><span class="wdots3"><i></i><i></i><i></i></span></div></div>`:''}`}</div>
+  <button class="wdown" id="wdown" data-w="down" aria-label="${sw()?'Shuka chini':'Go to the latest'}" hidden>${ic('wchev',20)}</button>${comp}${drawer}${conf}${viewer}</div>`}
+function webCam(){const T=wT(),Wb=W0(),k=Object.keys(DEMOPICS),src=Wb.scr==='review'?Wb.cap:DEMOPICS[Wb.pick];
+ return `<div class="wcam"><div class="wcamtop"><button class="wib" data-w="cam-x" aria-label="${T.cancel}">${ic('x',22)}</button><b>${T.camT}</b><span style="width:40px"></span></div>
+  <div class="wvf"><img src="${src}" alt="${T.photo}"></div>
+  ${Wb.scr==='review'?`<div class="wrev"><button class="btn gray" data-w="retake">${T.retake}</button><button class="btn" data-w="usephoto">${T.use}</button></div>`
+  :`<div class="wgal"><span>${T.gal}</span><div>${k.map(x=>`<button class="${x===Wb.pick?'on':''}" data-w="pick:${x}"><img src="${DEMOPICS[x]}" alt=""></button>`).join('')}</div></div><div class="wshut"><span></span><button class="wshutter" data-w="shoot" aria-label="${T.camT}"></button><button class="wib" data-w="flip" aria-label="flip">${ic('flip',22)}</button></div>`}</div>`}
+function webVoice(){const T=wT(),V=W0().v,st=V.muted?T.vMuted:({idle:T.vIdle,listen:T.vListen,think:T.vThink,speak:T.vSpeak})[V.ph];
+ return `<div class="wvoice"><div class="wvtop"><span></span><b>${T.vTitle}</b><span></span></div>
+  <div class="worbw"><button class="worb ${V.ph}" data-w="orb"${V.muted?' disabled':''} aria-label="${st}"><div class="wwv"><i></i><i></i><i></i><i></i><i></i></div></button>
+   <div class="wvst">${st}</div><div class="wvcap${V.who==='me'?' wvme':''}" id="wvcap">${V.subs?(V.cap?esc(V.cap):`<span class="wvd">${T.vDemo}</span>`):''}</div></div>
+  <div class="wvctl"><button data-w="vsub" class="${V.subs?'on':'off'}" aria-pressed="${V.subs}" aria-label="${V.subs?T.ccOff:T.ccOn}">CC</button><button data-w="vmute" class="${V.muted?'off':''}" aria-label="${T.vMute}">${ic('mic',22)}</button><button data-w="vend" class="end" aria-label="${T.vEnd}">${ic('x',24)}</button></div></div>`}
+function webView(){const T=wT(),Wb=W0(),sc=Wb.scr;
+ const inner=sc==='site'?webSite():sc==='ai'?webAI():sc==='voice'?webVoice():webCam();
+ const dark=sc==='camera'||sc==='review'||sc==='voice';
+ return `<div class="cit wcit"><div class="phone wph"><div class="screen wscr${Wb.lite?' lite':''}${dark?' wdark':''}" style="--wfz:${[1,1.1,1.2][Wb.fz]}"><div class="island"></div>${SBAR}
+ ${sc==='site'||sc==='ai'?`<div class="wubar"><div class="wurl">${ic('lock',13)} <span>${T.url}</span></div><span class="wtab">1</span></div>`:''}
+ <div class="wbody">${inner}</div><div class="home"><i></i></div></div></div>${webPanel()}</div>`}
+function webPanel(){const T=wT(),Wb=W0(),W=sw(),U=Wb.used,L=t();
+ const tg=W?{ok:'Jibu',card:'Chati',hold:'Inasubiri',oos:'Nje ya mada',em:'Dharura',cam:'Picha',voice:'Sauti',list:'Historia',web:'Tovuti'}:{ok:'Answer',card:'Chart',hold:'Waiting',oos:'Off topic',em:'Emergency',cam:'Photo',voice:'Voice',list:'History',web:'Website'};
+ const it=(k,icn,txt,tag,on)=>`<button class="dq${on?' ok':''}" data-w="${esc(k)}"><span class="dqi">${ic(icn,17)}</span><span class="dqt">${esc(txt)}</span><i>${on?ic('check',14):tg[tag]}</i></button>`;
+ const q=(txt,icn,tag)=>it('q:'+txt,icn,txt,tag,U['q:'+txt]);
+ return `<div id="demoP" class="${S.demo?'open':''}" role="dialog" aria-label="${L.h1}"><div class="dph"><div><b>${L.h1}</b><span>${W?'Gusa swali, Wajibika AI itajibu kwenye simu.':'Tap a question and Wajibika AI answers on the phone.'}</span></div><button class="ic" data-act="demotoggle" aria-label="Close" style="color:var(--mut)">${ic('x',20)}</button></div>
+ <div class="dpb"><h4>${W?'Maswali':'Questions'}</h4>${q(L.Q.cag,'book','ok')}${q(L.Q.rev,'chart','ok')}${q(L.Q.tax,'dl','ok')}${q(L.Q.proc,'list','ok')}${q(L.Q.cor,'flag','ok')}${q(T.bQ('Mvomero DC'),'chart','card')}
+ <h4>${W?'Inasubiri idhini ya WAJIBU':'Waiting for WAJIBU approval'}</h4>${q(L.Q.bud,'doc','hold')}
+ <h4>${W?'Nje ya mada':'Outside the topics'}</h4>${q(W?'Mpira wa Simba leo ni saa ngapi?':'What time is the football match today?','info','oos')}${q(W?'Nimepata ajali, nisaidie haraka!':'I had an accident, help me now!','info','em')}
+ <h4>${W?'Vipengele vya AI':'AI features'}</h4>${it('pcam','cam',W?'Tuma picha ya mradi':'Send a photo of a project','cam',U.cam)}${it('prec','mic',W?'Tuma ujumbe wa sauti':'Send a voice note','voice',U.rec)}${it('pvoice','wwave',W?'Ongea na AI kwa sauti':'Talk to the AI by voice','voice',U.voice)}${it('pdrawer','wmenu',W?'Historia ya mazungumzo':'Chat history','list',U.drawer)}
+ <p class="pcred">${W?'Majibu yanatoka kwenye taarifa zilizoidhinishwa na WAJIBU tu. Picha za mfano: Wikimedia Commons (CC BY-SA).':'Answers come only from WAJIBU-approved information. Sample photos: Wikimedia Commons (CC BY-SA).'}</p></div></div>
+ <button id="demoBtn" data-act="demotoggle" aria-expanded="${S.demo}">${ic(S.demo?'x':'chat',18)}${sw()?'Maswali ya mfano':'Sample questions'}</button>`}
+function wGo(id){const Wb=W0();if(Wb.scr!=='site'){Wb.scr='site';Wb.drawer=false;draw()}setTimeout(()=>{const el=$('#'+id),s=$('#wsite');if(el&&s)s.scrollTo({top:el.offsetTop-60,behavior:'smooth'})},30)}
+function wOpenAI(){const Wb=W0();Wb.scr='ai';if(!Wb.cur||!Wb.threads.find(x=>x.id===Wb.cur))Wb.cur=null;draw();wScroll()}
+function webAct(k){const Wb=W0(),T=wT();
+ if(k==='ai'){Wb.nav=false;return wOpenAI()}
+ if(k==='gowa'||k==='gofp'){S.view=k==='gowa'?'citizen':'basic';try{history.replaceState(null,'',k==='gowa'?'#whatsapp':'#feature-phone')}catch(_){}draw();return}
+ if(k==='wk'){Wb.nav=false;draw();const e=$('#wjwk'),w=$('#wsite');if(e&&w)w.scrollTo({top:e.offsetTop-60,behavior:'smooth'});return}
+ if(k==='nav'){Wb.nav=!Wb.nav;return draw()}
+ if(k==='top'){Wb.nav=false;draw();const e=$('#wsite');if(e)e.scrollTo({top:0,behavior:'smooth'});return}
+ if(k==='demo'){Wb.nav=false;draw();return toast(wsT().demo,'info')}
+ if(k==='subok'){const e=document.querySelector('.wjform input');if(e&&!/^\S+@\S+\.\S+$/.test(e.value.trim()))return toast(sw()?'Andika barua pepe sahihi.':'Enter a valid email.','err');if(e)e.value='';return toast(wsT().subOk)}
+ if(k.startsWith('more:')){const m=wCur().msgs[+k.slice(5)];if(m)m.open=!m.open;return draw()}
+ if(k==='down'){const e=$('#wscroll');if(e)e.scrollTo({top:e.scrollHeight,behavior:'smooth'});return}
+ if(k==='pan'){Wb.pan=Wb.pan===false;return draw()}
+ if(k==='site'){wStopSpk();Wb.scr='site';Wb.drawer=false;Wb.menu=false;return draw()}
+ if(k.startsWith('q:')){const q=k.slice(2);Wb.used[k]=1;Wb.scr='ai';Wb.drawer=false;Wb.menu=false;if(!Wb.cur)wCur();draw();return webAsk(q)}
+ if(k==='send'){const i=$('#wq'),txt=i?i.value:Wb.draft;if(Wb.att){const img=Wb.att;return webAsk(txt||'',{img})}return webAsk(txt)}
+ if(k==='lite'){Wb.lite=!Wb.lite;return draw()}
+ if(k.startsWith('fz:')){Wb.fz=Math.max(0,Math.min(2,Wb.fz+(+k.slice(3))));return draw()}
+ if(k.startsWith('go:')){const id=k.slice(3);Wb.used[{wtop:'top',wbud:'bud',wcag:'cag'}[id]]=1;return wGo(id)}
+ if(k==='drawer'||k==='pdrawer'){Wb.used.drawer=1;Wb.scr='ai';Wb.drawer=true;Wb.menu=false;return draw()}
+ if(k==='drawer-x'){Wb.drawer=false;return draw()}
+ if(k==='menu'){Wb.menu=!Wb.menu;return draw()}
+ if(k==='menu-x'){Wb.menu=false;return draw()}
+ if(k==='new'){wStopSpk();Wb.cur=null;Wb.drawer=false;Wb.menu=false;Wb.draft='';Wb.att=null;return draw()}
+ if(k.startsWith('open:')){wStopSpk();Wb.cur=k.slice(5);Wb.drawer=false;draw();return wScroll()}
+ if(k==='pin'){const th=Wb.threads.find(x=>x.id===Wb.cur);Wb.menu=false;if(th){th.pin=!th.pin;toast(th.pin?T.pinnedT:T.unpinnedT)}return draw()}
+ if(k.startsWith('delask:')){Wb.menu=false;Wb.confirm={kind:'one',id:k.slice(7)};return draw()}
+ if(k==='delall'){Wb.confirm={kind:'all'};return draw()}
+ if(k==='del-no'){Wb.confirm=null;return draw()}
+ if(k==='del-yes'){const c=Wb.confirm;Wb.confirm=null;wStopSpk();if(c.kind==='all'){Wb.threads=[];Wb.cur=null}else{Wb.threads=Wb.threads.filter(x=>x.id!==c.id);if(Wb.cur===c.id)Wb.cur=null}toast(T.deleted);return draw()}
+ if(k.startsWith('view:')){const m=wCur().msgs[+k.slice(5)];if(m&&m.img){Wb.viewer=m.img;draw()}return}
+ if(k==='view-x'){Wb.viewer=null;return draw()}
+ if(k==='plus'){Wb.plus=!Wb.plus;return draw()}
+ if(k==='gal'){Wb.plus=false;Wb.used.cam=1;wStopSpk();Wb.scr='camera';return draw()}
+ if(k==='cam'||k==='pcam'){Wb.plus=false;Wb.used.cam=1;wStopSpk();Wb.scr='camera';return draw()}
+ if(k==='cam-x'){Wb.scr='ai';return draw()}
+ if(k.startsWith('pick:')){Wb.pick=k.slice(5);return draw()}
+ if(k==='flip')return toast(sw()?'Kamera ya mbele haipo kwenye mfano huu.':'The front camera is not in this demo.','info');
+ if(k==='shoot'){Wb.cap=DEMOPICS[Wb.pick];Wb.scr='review';return draw()}
+ if(k==='retake'){Wb.scr='camera';return draw()}
+ if(k==='usephoto'){Wb.att=Wb.cap;Wb.scr='ai';if(!Wb.cur)wCur();draw();const i=$('#wq');if(i)i.focus();return}
+ if(k==='att-x'){Wb.att=null;return draw()}
+ if(k==='rec'||k==='prec'){Wb.plus=false;Wb.used.rec=1;if(Wb.scr!=='ai'){Wb.scr='ai';Wb.drawer=false}if(!Wb.cur)wCur();wRecStart('n');draw();if(!DICT)setTimeout(()=>{const e=$('#wrlive');if(e&&Wb.rec)e.textContent=T.demoQ[((Wb.vi||0)+1)%T.demoQ.length]},900);return}
+ if(k==='rec-x'){if(DICT&&Wb.rec&&!Wb.rec.nodict)DICT.stop().catch(()=>{});clearInterval(Wb._ri);Wb.rec=null;return draw()}
+ if(k==='rec-send'){return wRecStop().then(r=>{if(!r||!r.txt){draw();return toast(sw()?'Sikusikia vizuri. Jaribu tena.':'I could not hear you. Try again.','err')}webAsk(r.txt,{vn:r.dur})})}
+ if(k==='voice'||k==='pvoice'){Wb.plus=false;Wb.used.voice=1;wStopSpk();if(!Wb.cur)wCur();Wb.scr='voice';Wb.drawer=false;Wb.v={ph:'idle',cap:'',who:'',subs:Wb.v.subs,muted:false};return draw()}
+ if(k==='orb')return wVoiceTurn();
+ if(k==='vsub'){Wb.v.subs=!Wb.v.subs;return draw()}
+ if(k==='vmute'){Wb.v.muted=!Wb.v.muted;if(Wb.v.muted&&Wb.rec){if(DICT&&!Wb.rec.nodict)DICT.stop().catch(()=>{});clearInterval(Wb._ri);Wb.rec=null;Wb.v.ph='idle'}return draw()}
+ if(k==='vend'){if(Wb.rec){if(DICT&&!Wb.rec.nodict)DICT.stop().catch(()=>{});clearInterval(Wb._ri);Wb.rec=null}if(TTS){try{TTS.stop()}catch(_){}}Wb.vspk=false;Wb.scr='ai';Wb.v.ph='idle';draw();return wScroll()}
+ if(k.startsWith('fb:')){const [,i,v]=k.split(':'),m=wCur().msgs[+i];if(m){m.fb=m.fb===+v?null:+v;if(m.fb)toast(T.fbOk)}return draw()}
+ if(k.startsWith('retry:')){const msgs=wCur().msgs,i=+k.slice(6),q=msgs[i-1];if(!q||Wb.busy)return;msgs.splice(i,1);Wb.busy=true;draw();
+  (q.img?photoText(q.img,q.t).then(t=>({h:aiFmt(t),s:sw()?'Picha imehifadhiwa kwa ufuatiliaji wa WAJIBU':'Photo saved for WAJIBU follow-up'})):webAnswer(q.t)).then(r=>{Wb.busy=false;msgs.push(r);draw();wScroll()});return}
+ if(k.startsWith('spk:'))return wSpeak(+k.slice(4));
+ if(k.startsWith('tx:')){const m=wCur().msgs[+k.slice(3)];if(m)m.tx=!m.tx;return draw()}
+ if(k.startsWith('cp:')){const m=wCur().msgs[+k.slice(3)];const txt=m?plain(m.h):'';try{navigator.clipboard.writeText(txt).then(()=>toast(T.copied),()=>toast(T.copied))}catch(_){toast(T.copied)}return}}
+document.addEventListener('click',e=>{if(S.view!=='web')return;const b=e.target.closest&&e.target.closest('[data-w]');if(!b)return;
+ if(b.matches('.wscrim,.wmscrim,.wsheet')&&e.target!==b)return;
+ e.preventDefault();webAct(b.dataset.w)});
+document.addEventListener('keydown',e=>{if(S.view!=='web')return;if(e.key==='Enter'&&!e.shiftKey&&e.target&&e.target.id==='wq'){e.preventDefault();webAct('send')}});
+document.addEventListener('input',e=>{if(S.view!=='web'||!e.target||e.target.id!=='wq')return;const Wb=W0();Wb.draft=e.target.value;e.target.style.height='auto';e.target.style.height=Math.min(110,e.target.scrollHeight)+'px';
+ const has=!!(Wb.draft.trim()||Wb.att),v=$('#wvb'),s=$('#wsb');if(v)v.hidden=has;if(s)s.hidden=!has;const c=$('#wcnt');if(c){c.hidden=Wb.draft.length<=800;c.textContent=Wb.draft.length+'/1000'}});
+document.addEventListener('scroll',e=>{const el=e.target;if(!el||el.id!=='wscroll')return;const d=$('#wdown');if(d)d.hidden=el.scrollHeight-el.scrollTop-el.clientHeight<220},true);
+document.addEventListener('change',e=>{const x=e.target.closest&&e.target.closest('[data-wcn]');if(!x)return;W0().cn=x.value;W0().used.bud=1;draw()});
 
 function citizen(){return `<div class="cit">${phone()}${demoPanel()}</div>`}
 /* ---------------- staff render ---------------- */
@@ -2228,15 +2980,16 @@ function drawPhone(){const p=$('#phone');if(!p||p.dataset.ph!==S.ph||S.full)retu
 function draw(){const L=t();document.documentElement.lang=S.lang;try{setFs()}catch(_){}
   $('#tsub').textContent=L.sub;$('#reset').innerHTML=`<span class="vl">${L.reset}</span><span class="vs" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg></span>`;$('#reset').setAttribute('aria-label',L.reset);
   const w=S.cases.filter(c=>!c.done).length;
-  $('#views').innerHTML=['citizen','basic','staff'].map((k,i)=>`<button role="tab" aria-selected="${S.view===k}" class="${S.view===k?'on':''}" data-v="${k}"><span class="vl">${L.views[i]}</span><span class="vs">${[sw()?'WhatsApp':'WhatsApp',sw()?'USSD/SMS':'USSD/SMS',sw()?'Dashibodi':'Dashboard'][i]}</span>${k==='staff'&&w?`<span class="badge">${w}</span>`:''}${k==='basic'&&S.fpUnread&&S.view!=='basic'?`<span class="badge">${S.fpUnread}</span>`:''}${k==='citizen'&&S.unread&&S.view!=='citizen'?`<span class="badge">${S.unread}</span>`:''}</button>`).join('');
+  $('#views').innerHTML=['citizen','web','basic','staff'].map((k,i)=>`<button role="tab" aria-selected="${S.view===k}" class="${S.view===k?'on':''}" data-v="${k}"><span class="vl">${L.views[i]}</span><span class="vs">${[sw()?'Chati':'Chat',sw()?'Tovuti':'Web','USSD','Portal'][i]}</span>${k==='staff'&&w?`<span class="badge">${w}</span>`:''}${k==='basic'&&S.fpUnread&&S.view!=='basic'?`<span class="badge">${S.fpUnread}</span>`:''}${k==='citizen'&&S.unread&&S.view!=='citizen'?`<span class="badge">${S.unread}</span>`:''}</button>`).join('');
   document.querySelectorAll('#langs button').forEach(b=>b.className=b.dataset.l===S.lang?'on':'');
   if(S.view==='citizen'&&drawPhone())return;
   const ae=document.activeElement,fid=ae&&ae.id,ss=ae&&ae.selectionStart;
-  $('#app').innerHTML=S.view==='citizen'?citizen():S.view==='basic'?basicView():staff();S.full=false;S.comp=false;_ovk=ovKey();
+  const _ws=$('#wsite'),_wy=_ws?_ws.scrollTop:0,_wc=$('#wscroll'),_wcy=_wc?_wc.scrollTop:0;
+  $('#app').innerHTML=S.view==='citizen'?citizen():S.view==='web'?webView():S.view==='basic'?basicView():staff();{const w2=$('#wsite');if(w2)w2.scrollTop=_wy;const w3=$('#wscroll');if(w3)w3.scrollTop=_wcy}S.full=false;S.comp=false;_ovk=ovKey();
   const c=$('#chat');if(c)c.scrollTop=c.scrollHeight;const i=$('#inp');if(i)fit(i);
   if(fid&&fid!=='go'&&$('#'+fid)){const e=$('#'+fid);e.focus();try{if(ss!=null)e.setSelectionRange(ss,ss)}catch(_){}}}
 setInterval(()=>{const e=$('#ctime');if(e&&S.call){e.textContent=fmtDur(Date.now()-S.call.t0)}const r=$('#rtime');if(r&&S.rec&&!S.rec.paused)r.textContent=fmtDur(S.rec.acc+Date.now()-S.rec.t0);const rs=$('#rs');if(rs&&S.lg&&S.lg.step==='otp'&&!rs.querySelector('button'))rs.innerHTML=rsText()},500);
-function route(){const h=location.hash.slice(1);S.view=h==='dashboard'?'staff':h==='basic-phone'?'basic':'citizen'}
+function route(){const h=location.hash.slice(1);S.view=h==='dashboard'?'staff':(h==='feature-phone'||h==='basic-phone')?'basic':h==='web'?'web':'citizen'}
 
 /* ---------------- staff actions ---------------- */
 function staffAct(k){const U2=u();
@@ -2357,8 +3110,8 @@ document.addEventListener('click',e=>{
   if(S.gq&&!e.target.closest('.gs')&&!e.target.closest('[data-act^="go:"]')){const r=$('#gres');if(r)r.innerHTML=''}
   if(e.target.closest('#fs')){try{document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen().catch(()=>toast(sw()?'Skrini nzima haiwezekani hapa. Bonyeza F11.':'Full screen is not allowed here. Press F11.'))}catch(_){toast('F11')}return}
   if(e.target.closest('#reset')){fresh();S.auth='login';S.lg=LG0();S.used={};startChat();return}
-  const v=e.target.closest('[data-v]');if(v){S.view=v.dataset.v;if(S.view==='citizen'&&S.ph==='chat')S.unread=0;S.full=true;try{history.replaceState(null,'',S.view==='staff'?'#dashboard':S.view==='basic'?'#basic-phone':'#whatsapp')}catch(_){}draw();try{window.scrollTo(0,0)}catch(_){}return}
-  const l=e.target.closest('[data-l]');if(l){if(S.lang!==l.dataset.l){const st=S.st,vw=S.view;S.lang=l.dataset.l;try{localStorage.setItem('wk-lang',S.lang)}catch(_){}fresh();S.st=st;S.view=vw;S.fp=fp0();startChat()}return}
+  const v=e.target.closest('[data-v]');if(v){S.view=v.dataset.v;if(S.view==='citizen'&&S.ph==='chat')S.unread=0;S.full=true;try{history.replaceState(null,'',S.view==='staff'?'#dashboard':S.view==='basic'?'#feature-phone':S.view==='web'?'#web':'#whatsapp')}catch(_){}draw();try{window.scrollTo(0,0)}catch(_){}return}
+  const l=e.target.closest('[data-l]');if(l){if(S.lang!==l.dataset.l){const st=S.st,vw=S.view;S.lang=l.dataset.l;try{localStorage.setItem('wk-lang',S.lang)}catch(_){}fresh();S.web=null;S.st=st;S.view=vw;S.fp=fp0();startChat()}return}
   const st=e.target.closest('[data-st]');if(st){S.st=st.dataset.st;S.drawer=false;S.dd=null;draw();try{window.scrollTo(0,0)}catch(_){}return}
   const sel=e.target.closest('[data-sel]');if(sel){S.sel=+sel.dataset.sel;draw();return}
   if(e.target.closest('#go')){if((S.draft.chat||'').trim())sendText();else act('mic');return}
